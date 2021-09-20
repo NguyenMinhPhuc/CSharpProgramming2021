@@ -49,6 +49,12 @@
     <Compile Include="Cls_Main.cs" />
     <Compile Include="Data\User.cs" />
     <Compile Include="Data\UserDao.cs" />
+    <Compile Include="Frm_ChangedPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ChangedPassword.Designer.cs">
+      <DependentUpon>Frm_ChangedPassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_Chidle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,13 +73,25 @@
     <Compile Include="Frm_Main.Designer.cs">
       <DependentUpon>Frm_Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_Users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Users.Designer.cs">
+      <DependentUpon>Frm_Users.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Frm_ChangedPassword.resx">
+      <DependentUpon>Frm_ChangedPassword.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_Login.resx">
       <DependentUpon>Frm_Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Main.resx">
       <DependentUpon>Frm_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Users.resx">
+      <DependentUpon>Frm_Users.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -83,6 +101,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -96,6 +115,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\logout_rounded_left_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\home_32px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
