@@ -41,7 +41,12 @@ namespace Project20210913_Login.Data
         {
             return string.Format("{0},{1},{2},{3},{4}", ID, UserName, PassWord, Remember.ToString(), IdUserType);
         }
-
+        /// <summary>
+        /// Phương thức nạp chồng giúp so sánh 2 đối tượng user nếu bằng nhau ==> true.
+        /// Có thể quy định user bằng nhau theo thuộc tính nào là do người dụng
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
         public override bool Equals(object obj)
         {
             if(obj is User)
@@ -50,12 +55,15 @@ namespace Project20210913_Login.Data
             }
             return false;
         }
-
+        /// <summary>
+        /// Phương thức được thực thi từ interface Icomparable 
+        /// nếu muốn sắp xếp danh sách.
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
         public int CompareTo(object obj)
         {
-            
              return this.ID.CompareTo(((User)obj).ID);
-            
         }
     }
 }

@@ -8,6 +8,7 @@ namespace Project20210913_Login.Data
 {
    public class UserType
     {
+        //Kiểu dữ liệu UserType
         private int iDUserType;//ctrl+R+E--> Enter
         private string nameUserType;
 
