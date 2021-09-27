@@ -63,7 +63,7 @@ namespace Project20210913_Login
 
         private void mnuUserList_Click(object sender, EventArgs e)
         {
-            Frm_Users frm_Users = new Frm_Users();
+            Frm_Users_Main frm_Users = new Frm_Users_Main();
             frm_Users.MdiParent = this;
             frm_Users.StartPosition = FormStartPosition.CenterScreen;
             frm_Users.Show();

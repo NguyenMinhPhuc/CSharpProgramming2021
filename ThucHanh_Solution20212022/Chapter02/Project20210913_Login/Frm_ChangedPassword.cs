@@ -71,7 +71,7 @@ namespace Project20210913_Login
             //Láy data trong danh sách User (listUser) gán cho thuộc tính datasource của comboBox
             cboUser.DataSource = _listUser;
             //Gán giá trị cho thuộc tính DispalyMember. giá trị của thuộc tính này sẽ được nhìn thấy trên ComboBox.
-            cboUser.DisplayMember = "UserName";\
+            cboUser.DisplayMember = "UserName";
             //Gán giá trị cho thuộc tính ValueMember của comboBox. giá trị này sẽ được lấy ra khi chọn comboBox. qua thuộc tình SelectedValue.
             cboUser.ValueMember = "ID";
             //Thực hiện chuyển index về -1 và hiển thị text trên cboUser.

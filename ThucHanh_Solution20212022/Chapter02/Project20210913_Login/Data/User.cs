@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace Project20210913_Login.Data
 {
-    public class User
+    public class User:IComparable
     {
         // field - Những thuộc tính cần lưu trữ của User 
         private int iD;
+        private string fullName;
+        private bool sex;//true: nam; false: nu
         private string userName;
         private string passWord;
         private bool remember;
@@ -31,10 +33,29 @@ namespace Project20210913_Login.Data
         public string PassWord { get => passWord; set => passWord = value; }
         public bool Remember { get => remember; set => remember = value; }
         public int IdUserType { get => idUserType; set => idUserType = value; }
+        public string FullName { get => fullName; set => fullName = value; }
+        public bool Sex { get => sex; set => sex = value; }
+
         //Phương thức Lấy chuỗi định dạng của đối tượng User 
         public string GetString()
         {
             return string.Format("{0},{1},{2},{3},{4}", ID, UserName, PassWord, Remember.ToString(), IdUserType);
+        }
+
+        public override bool Equals(object obj)
+        {
+            if(obj is User)
+            {
+                return this.ID.Equals(((User)obj).ID);
+            }
+            return false;
+        }
+
+        public int CompareTo(object obj)
+        {
+            
+             return this.ID.CompareTo(((User)obj).ID);
+            
         }
     }
 }
