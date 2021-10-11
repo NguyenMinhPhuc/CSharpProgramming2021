@@ -11,6 +11,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter02", "Chapter02", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project20210913_Login", "Chapter02\Project20210913_Login\Project20210913_Login.csproj", "{6E970686-BAE9-41B6-B7F4-2272792F6179}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pro_TongKetProLogin", "Chapter02\Pro_TongKetProLogin\Pro_TongKetProLogin.csproj", "{B8197052-571D-43AC-B108-8BDA56066DC8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter03", "Chapter03", "{D2114766-3A8B-4B31-9218-DF2750D6B6A7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +29,10 @@ Global
 		{6E970686-BAE9-41B6-B7F4-2272792F6179}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E970686-BAE9-41B6-B7F4-2272792F6179}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E970686-BAE9-41B6-B7F4-2272792F6179}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8197052-571D-43AC-B108-8BDA56066DC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8197052-571D-43AC-B108-8BDA56066DC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8197052-571D-43AC-B108-8BDA56066DC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8197052-571D-43AC-B108-8BDA56066DC8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +40,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{225824CB-CF26-4B09-88E3-CBEDAD23C08D} = {CD3A8BFA-AD09-4816-85A5-8EE1EEE9306B}
 		{6E970686-BAE9-41B6-B7F4-2272792F6179} = {1B6AE160-4093-4F17-B95D-E6543C13AA0C}
+		{B8197052-571D-43AC-B108-8BDA56066DC8} = {1B6AE160-4093-4F17-B95D-E6543C13AA0C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {40EC364F-D4A4-40B6-B12C-D8A052277A9B}
