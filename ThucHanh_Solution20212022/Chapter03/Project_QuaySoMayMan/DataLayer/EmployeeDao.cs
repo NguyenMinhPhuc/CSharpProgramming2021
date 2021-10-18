@@ -9,12 +9,15 @@ namespace Project_QuaySoMayMan
 {
    public class EmployeeDao
     {
+        public string path { get; set; }
        public List<Employee> employees;
         public EmployeeDao()
         {
+            path = ClsMain.pathNhanVien;
             employees = new List<Employee>();
         }
-        public void DocFileDanhSach(string path)
+        //Đọc danh sách từ file danhsach.ini
+        public void DocNoiDung(string path)
         {
             using(FileStream fs=new FileStream(path,FileMode.Open,FileAccess.Read,FileShare.Read))
             {
@@ -39,7 +42,30 @@ namespace Project_QuaySoMayMan
                 }
             }
         }
-
+        public void GhiNoiDung(string path)
+        {
+            if (File.Exists(path))
+            {
+                File.Delete(path);
+            }
+            using (FileStream fs = new FileStream(path, FileMode.Create, FileAccess.Write, FileShare.Write))
+            {
+                using (StreamWriter sw = new StreamWriter(fs))
+                {
+                    //Sử dụng cấu trúc using để khai báo đối tượng FileStream
+                    foreach (Employee item in employees)
+                    {
+                        //Phương thức WriteLine dùng để ghi một đoạn string lên file text. sau đó xuống dòng
+                        sw.WriteLine(string.Format("{0},{1},{2}", item.ID, item.HoTen, item.PhongBan));
+                    }
+                }
+            }
+        }
+        /// <summary>
+        /// Phương Thức Nhân viên theo mã số
+        /// </summary>
+        /// <param name="ID">Mã Nhân viên </param>
+        /// <returns>Nhân viên được chọn</returns>
         public Employee GetNhanNhanTheoID(int ID)
         {
             foreach (Employee item in employees)

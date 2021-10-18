@@ -19,7 +19,12 @@ namespace Project_QuaySoMayMan
         public string PhongBan { get => phongBan; set => phongBan = value; }
         public int STT { get => sTT; set => sTT = value; }
         public string Giai { get => giai; set => giai = value; }
-
+        /// <summary>
+        /// Thực thi phương thưc CompareTo của Interface Icomparable
+        /// Đề có thể thực hiện những phương thức sắp xếp, tìm kiếm.... của Collecttion
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
         public int CompareTo(object obj)
         {
             return this.HoTen.CompareTo(((NhanVienNhanGiai)obj).HoTen);

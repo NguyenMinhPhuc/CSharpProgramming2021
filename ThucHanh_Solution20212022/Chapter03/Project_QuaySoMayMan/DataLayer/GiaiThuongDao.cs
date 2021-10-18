@@ -9,12 +9,14 @@ namespace Project_QuaySoMayMan
 {
    public class GiaiThuongDao
     {
-       public List<GiaiThuong> giaiThuongs;
+        public string path { get; set; }
+        public List<GiaiThuong> giaiThuongs;
         public GiaiThuongDao()
         {
+            path = ClsMain.pathGiaiThuong;
             giaiThuongs = new List<GiaiThuong>();
         }
-        public void DocFileDanhSachGiaiThuong(string path)
+        public void DocNoiDung(string path)
         {
             using (FileStream fs = new FileStream(path, FileMode.Open, FileAccess.Read, FileShare.Read))
             {
@@ -35,6 +37,25 @@ namespace Project_QuaySoMayMan
                             };
                             giaiThuongs.Add(giaiThuong);
                         }
+                    }
+                }
+            }
+        }
+        public void GhiNoiDung(string path)
+        {
+            if (File.Exists(path))
+            {
+                File.Delete(path);
+            }
+            using (FileStream fs = new FileStream(path, FileMode.Create, FileAccess.Write, FileShare.Write))
+            {
+                using (StreamWriter sw = new StreamWriter(fs))
+                {
+                    //Sử dụng cấu trúc using để khai báo đối tượng FileStream
+                    foreach (GiaiThuong item in giaiThuongs)
+                    {
+                        //Phương thức WriteLine dùng để ghi một đoạn string lên file text. sau đó xuống dòng
+                        sw.WriteLine(string.Format("{0},{1}", item.ID, item.TenGiai));
                     }
                 }
             }

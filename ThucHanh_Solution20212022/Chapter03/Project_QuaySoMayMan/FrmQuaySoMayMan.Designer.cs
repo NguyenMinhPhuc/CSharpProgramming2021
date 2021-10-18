@@ -38,34 +38,34 @@ namespace Project_QuaySoMayMan
             this.cboGiaiThuong = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.lblErr = new System.Windows.Forms.ToolStripStatusLabel();
             this.dgvDSQuay = new System.Windows.Forms.DataGridView();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.dgvDSTrungGiai = new System.Windows.Forms.DataGridView();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lbl5 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.lbl4 = new System.Windows.Forms.Label();
-            this.lbl3 = new System.Windows.Forms.Label();
-            this.lbl2 = new System.Windows.Forms.Label();
-            this.lbl1 = new System.Windows.Forms.Label();
-            this.btnQuay = new System.Windows.Forms.Button();
-            this.btnLayDanhSachQuay = new System.Windows.Forms.Button();
-            this.btnInDanhSachTrung = new System.Windows.Forms.Button();
             this.colSTT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colHoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colPhongBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.lblErr = new System.Windows.Forms.ToolStripStatusLabel();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.dgvDSTrungGiai = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colTenGiai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lbl5 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.lbl1 = new System.Windows.Forms.Label();
+            this.lbl2 = new System.Windows.Forms.Label();
+            this.lbl3 = new System.Windows.Forms.Label();
+            this.lbl4 = new System.Windows.Forms.Label();
+            this.btnQuay = new System.Windows.Forms.Button();
+            this.btnLayDanhSachQuay = new System.Windows.Forms.Button();
+            this.btnInDanhSachTrung = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.groupBox1.SuspendLayout();
-            this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSQuay)).BeginInit();
+            this.statusStrip1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSTrungGiai)).BeginInit();
             this.groupBox3.SuspendLayout();
@@ -113,22 +113,6 @@ namespace Project_QuaySoMayMan
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Danh sách quay";
             // 
-            // statusStrip1
-            // 
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.lblErr});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 601);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1284, 22);
-            this.statusStrip1.TabIndex = 4;
-            this.statusStrip1.Text = "statusStrip1";
-            // 
-            // lblErr
-            // 
-            this.lblErr.Name = "lblErr";
-            this.lblErr.Size = new System.Drawing.Size(16, 17);
-            this.lblErr.Text = "...";
-            // 
             // dgvDSQuay
             // 
             this.dgvDSQuay.AllowUserToAddRows = false;
@@ -160,6 +144,54 @@ namespace Project_QuaySoMayMan
             this.dgvDSQuay.Size = new System.Drawing.Size(394, 492);
             this.dgvDSQuay.TabIndex = 0;
             // 
+            // colSTT
+            // 
+            this.colSTT.DataPropertyName = "STT";
+            this.colSTT.HeaderText = "STT";
+            this.colSTT.Name = "colSTT";
+            this.colSTT.ReadOnly = true;
+            this.colSTT.Width = 50;
+            // 
+            // colID
+            // 
+            this.colID.DataPropertyName = "ID";
+            this.colID.HeaderText = "ID";
+            this.colID.Name = "colID";
+            this.colID.ReadOnly = true;
+            this.colID.Visible = false;
+            // 
+            // colHoTen
+            // 
+            this.colHoTen.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.colHoTen.DataPropertyName = "HoTen";
+            this.colHoTen.HeaderText = "Họ tên";
+            this.colHoTen.Name = "colHoTen";
+            this.colHoTen.ReadOnly = true;
+            // 
+            // colPhongBan
+            // 
+            this.colPhongBan.DataPropertyName = "PhongBan";
+            this.colPhongBan.HeaderText = "PB";
+            this.colPhongBan.Name = "colPhongBan";
+            this.colPhongBan.ReadOnly = true;
+            this.colPhongBan.Width = 150;
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lblErr});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 601);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(1284, 22);
+            this.statusStrip1.TabIndex = 4;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // lblErr
+            // 
+            this.lblErr.Name = "lblErr";
+            this.lblErr.Size = new System.Drawing.Size(16, 17);
+            this.lblErr.Text = "...";
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.label3);
@@ -171,6 +203,14 @@ namespace Project_QuaySoMayMan
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Danh sách trúng giải";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(30, 114);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(0, 29);
+            this.label3.TabIndex = 2;
             // 
             // dgvDSTrungGiai
             // 
@@ -198,17 +238,51 @@ namespace Project_QuaySoMayMan
             this.dgvDSTrungGiai.Name = "dgvDSTrungGiai";
             this.dgvDSTrungGiai.ReadOnly = true;
             this.dgvDSTrungGiai.RowHeadersVisible = false;
+            this.dgvDSTrungGiai.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvDSTrungGiai.RowTemplate.Height = 32;
             this.dgvDSTrungGiai.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvDSTrungGiai.Size = new System.Drawing.Size(878, 199);
             this.dgvDSTrungGiai.TabIndex = 1;
             // 
-            // label3
+            // dataGridViewTextBoxColumn1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(30, 114);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 29);
-            this.label3.TabIndex = 2;
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "STT";
+            this.dataGridViewTextBoxColumn1.HeaderText = "STT";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 50;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "ID";
+            this.dataGridViewTextBoxColumn2.HeaderText = "ID";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "HoTen";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Họ tên";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "PhongBan";
+            this.dataGridViewTextBoxColumn4.HeaderText = "PB";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            this.dataGridViewTextBoxColumn4.Width = 150;
+            // 
+            // colTenGiai
+            // 
+            this.colTenGiai.DataPropertyName = "Giai";
+            this.colTenGiai.HeaderText = "Giải";
+            this.colTenGiai.Name = "colTenGiai";
+            this.colTenGiai.ReadOnly = true;
+            this.colTenGiai.Width = 200;
             // 
             // lbl5
             // 
@@ -239,29 +313,17 @@ namespace Project_QuaySoMayMan
             this.groupBox3.TabIndex = 7;
             this.groupBox3.TabStop = false;
             // 
-            // lbl4
+            // lbl1
             // 
-            this.lbl4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl4.AutoSize = true;
-            this.lbl4.BackColor = System.Drawing.Color.Yellow;
-            this.lbl4.Font = new System.Drawing.Font("Microsoft Sans Serif", 120F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl4.Location = new System.Drawing.Point(175, 31);
-            this.lbl4.Name = "lbl4";
-            this.lbl4.Size = new System.Drawing.Size(166, 181);
-            this.lbl4.TabIndex = 6;
-            this.lbl4.Text = "0";
-            // 
-            // lbl3
-            // 
-            this.lbl3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl3.AutoSize = true;
-            this.lbl3.BackColor = System.Drawing.Color.Lime;
-            this.lbl3.Font = new System.Drawing.Font("Microsoft Sans Serif", 120F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl3.Location = new System.Drawing.Point(347, 31);
-            this.lbl3.Name = "lbl3";
-            this.lbl3.Size = new System.Drawing.Size(166, 181);
-            this.lbl3.TabIndex = 6;
-            this.lbl3.Text = "0";
+            this.lbl1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl1.AutoSize = true;
+            this.lbl1.BackColor = System.Drawing.Color.Fuchsia;
+            this.lbl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 120F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl1.Location = new System.Drawing.Point(691, 31);
+            this.lbl1.Name = "lbl1";
+            this.lbl1.Size = new System.Drawing.Size(166, 181);
+            this.lbl1.TabIndex = 6;
+            this.lbl1.Text = "0";
             // 
             // lbl2
             // 
@@ -275,17 +337,29 @@ namespace Project_QuaySoMayMan
             this.lbl2.TabIndex = 6;
             this.lbl2.Text = "0";
             // 
-            // lbl1
+            // lbl3
             // 
-            this.lbl1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl1.AutoSize = true;
-            this.lbl1.BackColor = System.Drawing.Color.Fuchsia;
-            this.lbl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 120F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl1.Location = new System.Drawing.Point(691, 31);
-            this.lbl1.Name = "lbl1";
-            this.lbl1.Size = new System.Drawing.Size(166, 181);
-            this.lbl1.TabIndex = 6;
-            this.lbl1.Text = "0";
+            this.lbl3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl3.AutoSize = true;
+            this.lbl3.BackColor = System.Drawing.Color.Lime;
+            this.lbl3.Font = new System.Drawing.Font("Microsoft Sans Serif", 120F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl3.Location = new System.Drawing.Point(347, 31);
+            this.lbl3.Name = "lbl3";
+            this.lbl3.Size = new System.Drawing.Size(166, 181);
+            this.lbl3.TabIndex = 6;
+            this.lbl3.Text = "0";
+            // 
+            // lbl4
+            // 
+            this.lbl4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl4.AutoSize = true;
+            this.lbl4.BackColor = System.Drawing.Color.Yellow;
+            this.lbl4.Font = new System.Drawing.Font("Microsoft Sans Serif", 120F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl4.Location = new System.Drawing.Point(175, 31);
+            this.lbl4.Name = "lbl4";
+            this.lbl4.Size = new System.Drawing.Size(166, 181);
+            this.lbl4.TabIndex = 6;
+            this.lbl4.Text = "0";
             // 
             // btnQuay
             // 
@@ -331,83 +405,12 @@ namespace Project_QuaySoMayMan
             this.btnInDanhSachTrung.TabIndex = 10;
             this.btnInDanhSachTrung.Text = "In DS trúng";
             this.btnInDanhSachTrung.UseVisualStyleBackColor = false;
-            // 
-            // colSTT
-            // 
-            this.colSTT.DataPropertyName = "STT";
-            this.colSTT.HeaderText = "STT";
-            this.colSTT.Name = "colSTT";
-            this.colSTT.ReadOnly = true;
-            this.colSTT.Width = 50;
-            // 
-            // colID
-            // 
-            this.colID.DataPropertyName = "ID";
-            this.colID.HeaderText = "ID";
-            this.colID.Name = "colID";
-            this.colID.ReadOnly = true;
-            this.colID.Visible = false;
-            // 
-            // colHoTen
-            // 
-            this.colHoTen.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.colHoTen.DataPropertyName = "HoTen";
-            this.colHoTen.HeaderText = "Họ tên";
-            this.colHoTen.Name = "colHoTen";
-            this.colHoTen.ReadOnly = true;
-            // 
-            // colPhongBan
-            // 
-            this.colPhongBan.DataPropertyName = "PhongBan";
-            this.colPhongBan.HeaderText = "PB";
-            this.colPhongBan.Name = "colPhongBan";
-            this.colPhongBan.ReadOnly = true;
-            this.colPhongBan.Width = 150;
+            this.btnInDanhSachTrung.Click += new System.EventHandler(this.btnInDanhSachTrung_Click);
             // 
             // timer1
             // 
             this.timer1.Interval = 10;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "STT";
-            this.dataGridViewTextBoxColumn1.HeaderText = "STT";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 50;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "ID";
-            this.dataGridViewTextBoxColumn2.HeaderText = "ID";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "HoTen";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Họ tên";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "PhongBan";
-            this.dataGridViewTextBoxColumn4.HeaderText = "PB";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            this.dataGridViewTextBoxColumn4.Width = 150;
-            // 
-            // colTenGiai
-            // 
-            this.colTenGiai.DataPropertyName = "Giai";
-            this.colTenGiai.HeaderText = "Giải";
-            this.colTenGiai.Name = "colTenGiai";
-            this.colTenGiai.ReadOnly = true;
-            this.colTenGiai.Width = 200;
             // 
             // FrmQuaySoMayMan
             // 
@@ -427,15 +430,15 @@ namespace Project_QuaySoMayMan
             this.Controls.Add(this.statusStrip1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.Margin = new System.Windows.Forms.Padding(7);
             this.Name = "FrmQuaySoMayMan";
             this.Text = "FrmQuaySoMayMan";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmQuaySoMayMan_Load);
             this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDSQuay)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDSQuay)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSTrungGiai)).EndInit();

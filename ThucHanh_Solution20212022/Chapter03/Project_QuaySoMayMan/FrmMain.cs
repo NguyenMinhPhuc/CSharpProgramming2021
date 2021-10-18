@@ -16,5 +16,11 @@ namespace Project_QuaySoMayMan
         {
             InitializeComponent();
         }
+
+        private void mnuQuaySoMayMan_Click(object sender, EventArgs e)
+        {
+            FrmQuaySoMayMan frmQuaySoMayMan = new FrmQuaySoMayMan();
+            frmQuaySoMayMan.ShowDialog();
+        }
     }
 }
