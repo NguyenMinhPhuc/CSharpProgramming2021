@@ -17,6 +17,8 @@ namespace Project_QuaySoMayMan
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FrmQuaySoMayMan());
+
+           //code thêm
         }
     }
 }
