@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6E970686-BAE9-41B6-B7F4-2272792F6179}</ProjectGuid>
+    <ProjectGuid>{AC80C5DA-9A76-4377-A4E5-511C64AF782E}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Project20210913_Login</RootNamespace>
-    <AssemblyName>Project20210913_Login</AssemblyName>
+    <RootNamespace>Pro_QuaySo</RootNamespace>
+    <AssemblyName>Pro_QuaySo</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,74 +46,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cls_Main.cs" />
-    <Compile Include="Data\Function.cs" />
-    <Compile Include="Data\FunctionsDao.cs" />
-    <Compile Include="Data\User.cs" />
-    <Compile Include="Data\UserDao.cs" />
-    <Compile Include="Data\UserType.cs" />
-    <Compile Include="Data\UserTypeDao.cs" />
-    <Compile Include="Frm_ChangedPassword.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Frm_ChangedPassword.Designer.cs">
-      <DependentUpon>Frm_ChangedPassword.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Frm_Chidle.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Frm_Chidle.Designer.cs">
-      <DependentUpon>Frm_Chidle.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Frm_Login.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Frm_Login.Designer.cs">
-      <DependentUpon>Frm_Login.cs</DependentUpon>
-    </Compile>
     <Compile Include="Frm_Main.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Frm_Main.Designer.cs">
       <DependentUpon>Frm_Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frm_Permissions_Main.cs">
+    <Compile Include="Frm_QuaySo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_Permissions_Main.Designer.cs">
-      <DependentUpon>Frm_Permissions_Main.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Frm_Users_Main.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Frm_Users_Main.Designer.cs">
-      <DependentUpon>Frm_Users_Main.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Frm_User_Modified.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Frm_User_Modified.Designer.cs">
-      <DependentUpon>Frm_User_Modified.cs</DependentUpon>
+    <Compile Include="Frm_QuaySo.Designer.cs">
+      <DependentUpon>Frm_QuaySo.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Frm_ChangedPassword.resx">
-      <DependentUpon>Frm_ChangedPassword.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Frm_Login.resx">
-      <DependentUpon>Frm_Login.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Frm_Main.resx">
       <DependentUpon>Frm_Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_Permissions_Main.resx">
-      <DependentUpon>Frm_Permissions_Main.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Frm_Users_Main.resx">
-      <DependentUpon>Frm_Users_Main.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Frm_User_Modified.resx">
-      <DependentUpon>Frm_User_Modified.cs</DependentUpon>
+    <EmbeddedResource Include="Frm_QuaySo.resx">
+      <DependentUpon>Frm_QuaySo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -123,7 +74,6 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -137,15 +87,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="images\logout_rounded_left_32px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="images\home_32px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="images\refresh_32px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

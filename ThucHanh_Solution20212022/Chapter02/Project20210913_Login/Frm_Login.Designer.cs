@@ -38,13 +38,14 @@ namespace Project20210913_Login
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.lblErr = new System.Windows.Forms.ToolStripStatusLabel();
             this.ckbRemember = new System.Windows.Forms.CheckBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(14, 118);
+            this.label1.Location = new System.Drawing.Point(13, 91);
             this.label1.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(135, 29);
@@ -54,7 +55,7 @@ namespace Project20210913_Login
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(23, 159);
+            this.label2.Location = new System.Drawing.Point(22, 132);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(126, 29);
             this.label2.TabIndex = 1;
@@ -62,7 +63,7 @@ namespace Project20210913_Login
             // 
             // txtUserName
             // 
-            this.txtUserName.Location = new System.Drawing.Point(159, 115);
+            this.txtUserName.Location = new System.Drawing.Point(158, 88);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(336, 35);
             this.txtUserName.TabIndex = 0;
@@ -70,14 +71,14 @@ namespace Project20210913_Login
             // 
             // txtPassWord
             // 
-            this.txtPassWord.Location = new System.Drawing.Point(159, 156);
+            this.txtPassWord.Location = new System.Drawing.Point(158, 129);
             this.txtPassWord.Name = "txtPassWord";
             this.txtPassWord.Size = new System.Drawing.Size(336, 35);
             this.txtPassWord.TabIndex = 1;
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(154, 251);
+            this.btnLogin.Location = new System.Drawing.Point(153, 224);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(158, 45);
             this.btnLogin.TabIndex = 4;
@@ -88,7 +89,7 @@ namespace Project20210913_Login
             // btnExit
             // 
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnExit.Location = new System.Drawing.Point(332, 252);
+            this.btnExit.Location = new System.Drawing.Point(331, 225);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(158, 45);
             this.btnExit.TabIndex = 5;
@@ -100,9 +101,9 @@ namespace Project20210913_Login
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lblErr});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 299);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 281);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(506, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(501, 22);
             this.statusStrip1.TabIndex = 6;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -115,12 +116,25 @@ namespace Project20210913_Login
             // ckbRemember
             // 
             this.ckbRemember.AutoSize = true;
-            this.ckbRemember.Location = new System.Drawing.Point(159, 207);
+            this.ckbRemember.Location = new System.Drawing.Point(158, 180);
             this.ckbRemember.Name = "ckbRemember";
             this.ckbRemember.Size = new System.Drawing.Size(153, 33);
             this.ckbRemember.TabIndex = 3;
             this.ckbRemember.Text = "Remember";
             this.ckbRemember.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label3.Font = new System.Drawing.Font("Arial", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(0, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(501, 68);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "LOG IN";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Frm_Login
             // 
@@ -128,7 +142,8 @@ namespace Project20210913_Login
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnExit;
-            this.ClientSize = new System.Drawing.Size(506, 321);
+            this.ClientSize = new System.Drawing.Size(501, 303);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.ckbRemember);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.btnExit);
@@ -138,6 +153,7 @@ namespace Project20210913_Login
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(7);
             this.Name = "Frm_Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -166,5 +182,6 @@ namespace Project20210913_Login
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel lblErr;
         private System.Windows.Forms.CheckBox ckbRemember;
+        private System.Windows.Forms.Label label3;
     }
 }
