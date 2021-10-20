@@ -46,9 +46,9 @@ namespace Project20210913_Login
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lblUserInfor});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 248);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 549);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(796, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(1045, 22);
             this.statusStrip1.TabIndex = 0;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -65,7 +65,7 @@ namespace Project20210913_Login
             this.filesToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(796, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1045, 24);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -99,21 +99,21 @@ namespace Project20210913_Login
             // mnuChangedPassword
             // 
             this.mnuChangedPassword.Name = "mnuChangedPassword";
-            this.mnuChangedPassword.Size = new System.Drawing.Size(180, 22);
+            this.mnuChangedPassword.Size = new System.Drawing.Size(175, 22);
             this.mnuChangedPassword.Text = "Changed Password";
             this.mnuChangedPassword.Click += new System.EventHandler(this.mnuChangedPassword_Click);
             // 
             // mnuSaveListUser
             // 
             this.mnuSaveListUser.Name = "mnuSaveListUser";
-            this.mnuSaveListUser.Size = new System.Drawing.Size(180, 22);
+            this.mnuSaveListUser.Size = new System.Drawing.Size(175, 22);
             this.mnuSaveListUser.Text = "Save List";
             this.mnuSaveListUser.Click += new System.EventHandler(this.mnuSaveListUser_Click);
             // 
             // mnuUserList
             // 
             this.mnuUserList.Name = "mnuUserList";
-            this.mnuUserList.Size = new System.Drawing.Size(180, 22);
+            this.mnuUserList.Size = new System.Drawing.Size(175, 22);
             this.mnuUserList.Text = "User List";
             this.mnuUserList.Click += new System.EventHandler(this.mnuUserList_Click);
             // 
@@ -121,7 +121,7 @@ namespace Project20210913_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(796, 270);
+            this.ClientSize = new System.Drawing.Size(1045, 571);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
