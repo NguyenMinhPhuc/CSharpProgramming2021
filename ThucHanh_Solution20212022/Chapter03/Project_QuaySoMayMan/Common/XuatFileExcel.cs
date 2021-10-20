@@ -3,23 +3,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 using Excel = Microsoft.Office.Interop.Excel;
 using Microsoft.Office.Interop.Excel;
-using System.Windows.Forms;
+//Design pattern. factory method
 using System.IO;
+using System.Windows.Forms;
 
 namespace Project_QuaySoMayMan.Common
 {
    public class XuatFileExcel
     {
         /// <summary>
-        /// Phương thức xuất file Excel theo hình thức ghi file.
+        /// Phương thức xuất file Excel bằng cách sử dụng lớp StreamWriter trong namespace System.IO.
         /// </summary>
-        /// <param name="path">Đường dẫn file excel </param>
-        /// <param name="list">Danh sách cần ghi, nội dung theo dạng string</param>
-        /// <param name="header"></param>
-        /// <param name="footer"></param>
-        /// <param name="titles"></param>
+        /// <param name="path">Đường dẫn file excel</param>
+        /// <param name="list">Danh sách cần ghi, danh sách này có kiểu List<string> </string></param>
+        /// <param name="header">Đầu trang </param>
+        /// <param name="footer">Chân trang</param>
+        /// <param name="titles">Danh sách tiêu để của dữ liệu</param>
         public static void XuatExcel(string path,List<string> list, string header, string footer,params string[] titles)
         {
             string result = string.Format("{0}\n\r", header);
@@ -44,10 +46,17 @@ namespace Project_QuaySoMayMan.Common
             result += "\n" + footer;
             GhiFile(path, result);
         }
-
+        /// <summary>
+        /// Phuong thức xuất dữ liệu lên files Excel với nguồi dữ liệu từ DataGridview
+        /// </summary>
+        /// <param name="path">path file</param>
+        /// <param name="dgv">dataGridView chứa dữ liệu</param>
+        /// <param name="header"></param>
+        /// <param name="footer"></param>
         public static void XuatExcel(string path,DataGridView dgv, string header, string footer)
         {
             string result = string.Format("{0}\n\r", header);
+
             for (int i = 0; i < dgv.ColumnCount; i++)
             {
                 if (dgv.Columns[i].Visible == true)
@@ -66,11 +75,14 @@ namespace Project_QuaySoMayMan.Common
             result += "\n" + footer;
             GhiFile(path, result);
         }
+        //so luong tham so
+        //kieu du lieu
+        //thu tu cua tham so
         private static void GhiFile(string path, string contents)
         {
             if (File.Exists(path))
             {
-                File.Delete(path);
+                File.Delete(path);//Xoa file neu ton tai
             }
             using (FileStream fs = new FileStream(path, FileMode.Create, FileAccess.Write, FileShare.Write))
             {
@@ -82,6 +94,7 @@ namespace Project_QuaySoMayMan.Common
                 }
             }
         }
+
         private static void BorderAround(Range range)
         {
             Borders borders = range.Borders;
@@ -112,7 +125,7 @@ namespace Project_QuaySoMayMan.Common
             { GC.Collect(); }
         }
 
-        public static void ExportExcelByInterop(string filePath, DataGridView dgv, int rowBegin = 1,
+        public static void XuatExcel(string filePath, DataGridView dgv, int rowBegin = 1,
             string fontName = "Arial", int fontsizeTieude = 14, int fonsizeNoiDung = 12)
         {
             Excel.Application xlApp = new Excel.Application();
@@ -137,7 +150,7 @@ namespace Project_QuaySoMayMan.Common
             //khoi bao mot so thuoc tinhs
             int row = rowBegin;
             //Them Tieu de
-            Range row1_TieuDe = ws.get_Range("A" + rowBegin.ToString(), "J" + rowBegin.ToString());
+            Range row1_TieuDe = ws.get_Range("A" + rowBegin.ToString(), "C" + rowBegin.ToString());
             row1_TieuDe.Merge();
             row1_TieuDe.Font.Bold = true;
             row1_TieuDe.Font.Name = fontName;

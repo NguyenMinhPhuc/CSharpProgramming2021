@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using Project_QuaySoMayMan.Common;
 
 namespace Project_QuaySoMayMan
@@ -74,9 +75,16 @@ namespace Project_QuaySoMayMan
                 list.Add(line);
             }
             string[] title=new string[]{
-                "ID","Họ và tên","Phòng ban", "Giải"
+                "ma so","Họ và tên","Phòng ban", "Giải","Thanh tien"
             };
             XuatFileExcel.XuatExcel(path, list, "Danh sách nhân viên trúng giải", "Đã ký", title);
+           // XuatFileExcel.XuatExcel(path, list, "Danh sách nhân viên trúng giải", "Đã ký", "id","name","phong ban");
+        }
+
+        internal void XuatExcel(string path,DataGridView dgv)
+        {
+            XuatFileExcel.XuatExcel(path, dgv,1, "Tahoma",16,12);
+           
         }
     }
 }
