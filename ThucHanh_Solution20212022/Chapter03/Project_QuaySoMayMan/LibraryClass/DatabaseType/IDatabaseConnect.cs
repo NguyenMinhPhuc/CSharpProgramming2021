@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace LibraryClass.DatabaseType
 {
-    interface IDatabaseConnect
+   public interface IDatabaseConnect
     {
+        List<string> ReadFile(string path);
+        void WriteToFile(string path, List<string> vs);
     }
 }

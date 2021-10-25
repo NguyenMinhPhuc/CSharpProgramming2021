@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace LibraryClass.DatabaseType
 {
-    class TypeDatabase
+   public enum TypeDatabase
     {
+        INI=0,
+        TEXT=1,
+        BINARY=2,
+        MSSQL=3
     }
 }
