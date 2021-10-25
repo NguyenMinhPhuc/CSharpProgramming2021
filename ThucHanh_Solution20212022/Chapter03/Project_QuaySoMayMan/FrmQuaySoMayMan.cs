@@ -18,7 +18,7 @@ namespace Project_QuaySoMayMan
     public partial class FrmQuaySoMayMan : Form
     {
         List<Employee> employees;
-        IEmployeeDao employeeDao;
+        EmployeeDao employeeDao;
 
         //tạo danh sách Nhân viên nhận giải
         List<NhanVienNhanGiai> nhanVienNhanGiais;
@@ -31,6 +31,7 @@ namespace Project_QuaySoMayMan
         private void FrmQuaySoMayMan_Load(object sender, EventArgs e)
         {
             employees = new List<Employee>();
+
             employeeDao = new EmployeeDao(ClsMain.typeDatabase,ClsMain.pathNhanVien);
 
             nhanVienNhanGiais = new List<NhanVienNhanGiai>();
