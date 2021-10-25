@@ -129,5 +129,11 @@
   <ItemGroup>
     <Folder Include="BusinessLayer\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="LibraryClass\LibraryClass.csproj">
+      <Project>{c31e6005-ee73-4507-b4bb-47ad5e53dcdc}</Project>
+      <Name>LibraryClass</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
