@@ -1,4 +1,6 @@
 ﻿
+using LibraryClass.Dao;
+using LibraryClass.EF;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,7 +18,7 @@ namespace Project_QuaySoMayMan
     public partial class FrmQuaySoMayMan : Form
     {
         List<Employee> employees;
-        EmployeeDao employeeDao;
+        IEmployeeDao employeeDao;
 
         //tạo danh sách Nhân viên nhận giải
         List<NhanVienNhanGiai> nhanVienNhanGiais;
@@ -29,7 +31,7 @@ namespace Project_QuaySoMayMan
         private void FrmQuaySoMayMan_Load(object sender, EventArgs e)
         {
             employees = new List<Employee>();
-            employeeDao = new EmployeeDao();
+            employeeDao = new EmployeeDao(ClsMain.typeDatabase,ClsMain.pathNhanVien);
 
             nhanVienNhanGiais = new List<NhanVienNhanGiai>();
             nhanVienNhanGiaiDao = new NhanVienNhanGiaiDao();
@@ -163,7 +165,7 @@ namespace Project_QuaySoMayMan
                 //Lấy tên file
                 string path = openFileDialog.FileName;
                 //goi hàm đọc file
-                employeeDao.DocNoiDung(path);
+                employeeDao.ReadData(path);
                 employees = employeeDao.employees;
                 //Gọi hàm hiển thị danh sách lên lưới
                 HienThiDanhSachNhanVien();

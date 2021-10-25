@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace LibraryClass.DatabaseType
 {
-    interface IDatabaseFactory
+   public interface IDatabaseFactory
     {
+        void CreateDatabaseType(TypeDatabase typeDatabase);
     }
 }

@@ -41,12 +41,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dao\EmployeeDao.cs" />
+    <Compile Include="Dao\IEmployeeDao.cs" />
+    <Compile Include="Database.cs" />
+    <Compile Include="DatabaseType\DatabaseConnectBinary.cs" />
     <Compile Include="DatabaseType\DatabaseConnectINI.cs" />
     <Compile Include="DatabaseType\DatabaseConnectText.cs" />
     <Compile Include="DatabaseType\DatabaseFactory.cs" />
     <Compile Include="DatabaseType\IDatabaseConnect.cs" />
     <Compile Include="DatabaseType\IDatabaseFactory.cs" />
     <Compile Include="DatabaseType\TypeDatabase.cs" />
+    <Compile Include="EF\Employee.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
