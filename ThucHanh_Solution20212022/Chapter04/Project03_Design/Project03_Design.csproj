@@ -55,10 +55,28 @@
     <Compile Include="FrmDaskboard.Designer.cs">
       <DependentUpon>FrmDaskboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_DoiMatKhau_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_DoiMatKhau_Main.Designer.cs">
+      <DependentUpon>Frm_DoiMatKhau_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_SaoLuu_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_SaoLuu_Main.Designer.cs">
+      <DependentUpon>Frm_SaoLuu_Main.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmDaskboard.resx">
       <DependentUpon>FrmDaskboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_DoiMatKhau_Main.resx">
+      <DependentUpon>Frm_DoiMatKhau_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_SaoLuu_Main.resx">
+      <DependentUpon>Frm_SaoLuu_Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

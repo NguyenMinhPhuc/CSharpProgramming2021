@@ -185,6 +185,7 @@ namespace Project03_Design
             this.btnSaoLuu.Text = "Sao lưu / phục hồi";
             this.btnSaoLuu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSaoLuu.UseVisualStyleBackColor = false;
+            this.btnSaoLuu.Click += new System.EventHandler(this.btnSaoLuu_Click);
             // 
             // btnDoiMatKhau
             // 
@@ -718,7 +719,7 @@ namespace Project03_Design
             this.tc_Main.CanReorderTabs = true;
             this.tc_Main.CloseButtonOnTabsVisible = true;
             this.tc_Main.CloseButtonPosition = DevComponents.DotNetBar.eTabCloseButtonPosition.Right;
-            this.tc_Main.ColorScheme.TabBackground = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.tc_Main.ColorScheme.TabBackground = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
             this.tc_Main.ColorScheme.TabBackground2 = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
             this.tc_Main.ColorScheme.TabItemBackgroundColorBlend.AddRange(new DevComponents.DotNetBar.BackgroundColorBlend[] {
             new DevComponents.DotNetBar.BackgroundColorBlend(System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(230)))), ((int)(((byte)(249))))), 0F),
@@ -746,6 +747,7 @@ namespace Project03_Design
             this.tc_Main.TabIndex = 7;
             this.tc_Main.TabLayoutType = DevComponents.DotNetBar.eTabLayoutType.FixedWithNavigationBox;
             this.tc_Main.Text = "tabControl1";
+            this.tc_Main.TabItemClose += new DevComponents.DotNetBar.TabStrip.UserActionEventHandler(this.tc_Main_TabItemClose);
             // 
             // FrmDaskboard
             // 
