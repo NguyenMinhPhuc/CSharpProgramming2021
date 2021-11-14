@@ -61,6 +61,12 @@
     <Compile Include="Frm_DoiMatKhau_Main.Designer.cs">
       <DependentUpon>Frm_DoiMatKhau_Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_QuanLyTaiKhoan_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_QuanLyTaiKhoan_Main.Designer.cs">
+      <DependentUpon>Frm_QuanLyTaiKhoan_Main.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_SaoLuu_Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_DoiMatKhau_Main.resx">
       <DependentUpon>Frm_DoiMatKhau_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_QuanLyTaiKhoan_Main.resx">
+      <DependentUpon>Frm_QuanLyTaiKhoan_Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_SaoLuu_Main.resx">
       <DependentUpon>Frm_SaoLuu_Main.cs</DependentUpon>
@@ -133,6 +142,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\close_window_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\MyTextBox\MyLibrary.csproj">
+      <Project>{c5a13484-36be-4571-9f7b-a078fadf24c3}</Project>
+      <Name>MyLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -147,7 +147,7 @@ namespace Project03_Design
             this.pnl__Menu_HeThong.Location = new System.Drawing.Point(0, 0);
             this.pnl__Menu_HeThong.Margin = new System.Windows.Forms.Padding(0);
             this.pnl__Menu_HeThong.Name = "pnl__Menu_HeThong";
-            this.pnl__Menu_HeThong.Size = new System.Drawing.Size(250, 43);
+            this.pnl__Menu_HeThong.Size = new System.Drawing.Size(250, 303);
             this.pnl__Menu_HeThong.TabIndex = 4;
             // 
             // btn__HeThong
@@ -223,6 +223,7 @@ namespace Project03_Design
             this.btnQuanLyTaiKhoan.Text = "Quản lý tài khoản";
             this.btnQuanLyTaiKhoan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnQuanLyTaiKhoan.UseVisualStyleBackColor = false;
+            this.btnQuanLyTaiKhoan.Click += new System.EventHandler(this.btnQuanLyTaiKhoan_Click);
             // 
             // btnPhanQuyen
             // 
@@ -290,7 +291,7 @@ namespace Project03_Design
             this.pnl__DanhMuc.Controls.Add(this.button11);
             this.pnl__DanhMuc.Controls.Add(this.button12);
             this.pnl__DanhMuc.Controls.Add(this.button13);
-            this.pnl__DanhMuc.Location = new System.Drawing.Point(0, 43);
+            this.pnl__DanhMuc.Location = new System.Drawing.Point(0, 303);
             this.pnl__DanhMuc.Margin = new System.Windows.Forms.Padding(0);
             this.pnl__DanhMuc.Name = "pnl__DanhMuc";
             this.pnl__DanhMuc.Size = new System.Drawing.Size(250, 45);
@@ -432,7 +433,7 @@ namespace Project03_Design
             this.pnl__Menu_TacVu.Controls.Add(this.button26);
             this.pnl__Menu_TacVu.Controls.Add(this.button27);
             this.pnl__Menu_TacVu.Controls.Add(this.button28);
-            this.pnl__Menu_TacVu.Location = new System.Drawing.Point(0, 88);
+            this.pnl__Menu_TacVu.Location = new System.Drawing.Point(0, 348);
             this.pnl__Menu_TacVu.Margin = new System.Windows.Forms.Padding(0);
             this.pnl__Menu_TacVu.Name = "pnl__Menu_TacVu";
             this.pnl__Menu_TacVu.Size = new System.Drawing.Size(250, 45);
@@ -568,7 +569,7 @@ namespace Project03_Design
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
             this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel4.Location = new System.Drawing.Point(3, 136);
+            this.panel4.Location = new System.Drawing.Point(3, 396);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(4, 0);
             this.panel4.TabIndex = 7;

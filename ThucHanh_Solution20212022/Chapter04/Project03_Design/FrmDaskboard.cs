@@ -221,5 +221,28 @@ namespace Project03_Design
                 tc_Main.SelectedTabIndex = tc_Main.Tabs.Count - 1;
             }
         }
+
+        private void btnQuanLyTaiKhoan_Click(object sender, EventArgs e)
+        {
+            this.trangThaiMoTa = true;
+            this.tieuDeTab = "Doi Mat Khau";
+
+            if (!CheckOpenTabs(tieuDeTab))
+            {
+                TabItem t = tc_Main.CreateTab(tieuDeTab);
+                t.Name = "Frm_QuanLyTaiKhoan_Main";
+                Frm_QuanLyTaiKhoan_Main frm = new Frm_QuanLyTaiKhoan_Main()
+                {
+                    DongTab = new Frm_QuanLyTaiKhoan_Main._deDongTab(DongTab),
+                    frm = this,
+                    TopLevel = false,
+                    Dock = DockStyle.Fill
+
+                };
+                t.AttachedControl.Controls.Add(frm);
+                frm.Show();
+                tc_Main.SelectedTabIndex = tc_Main.Tabs.Count - 1;
+            }
+        }
     }
 }

@@ -29,11 +29,14 @@ namespace Project03_Design
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.myTextBox = new MyLibrary.MyTextBox(this.components);
+            this.textBox1 = new MyLibrary.WaterMarkTextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,15 +68,6 @@ namespace Project03_Design
             this.panel1.Size = new System.Drawing.Size(800, 48);
             this.panel1.TabIndex = 1;
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 44);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(800, 4);
-            this.panel2.TabIndex = 1;
-            // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(105)))), ((int)(((byte)(184)))));
@@ -87,6 +81,15 @@ namespace Project03_Design
             this.label1.Text = "label1";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 44);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(800, 4);
+            this.panel2.TabIndex = 1;
+            // 
             // statusStrip1
             // 
             this.statusStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(105)))), ((int)(((byte)(184)))));
@@ -96,11 +99,34 @@ namespace Project03_Design
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
+            // myTextBox
+            // 
+            this.myTextBox.Dvalue = 0D;
+            this.myTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.myTextBox.Location = new System.Drawing.Point(208, 149);
+            this.myTextBox.Lvalue = ((long)(0));
+            this.myTextBox.Name = "myTextBox";
+            this.myTextBox.Size = new System.Drawing.Size(362, 35);
+            this.myTextBox.TabIndex = 3;
+            this.myTextBox.Text = "0";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(208, 225);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(362, 35);
+            this.textBox1.TabIndex = 4;
+            this.textBox1.WaterMarkColor = System.Drawing.Color.Gray;
+            this.textBox1.WaterMarkText = "Nhap ten";
+            // 
             // Frm_SaoLuu_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.myTextBox);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -120,5 +146,7 @@ namespace Project03_Design
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.StatusStrip statusStrip1;
+        private MyLibrary.MyTextBox myTextBox;
+        private MyLibrary.WaterMarkTextBox textBox1;
     }
 }
