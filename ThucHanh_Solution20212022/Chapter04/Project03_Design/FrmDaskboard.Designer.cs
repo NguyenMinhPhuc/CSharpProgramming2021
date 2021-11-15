@@ -55,7 +55,7 @@ namespace Project03_Design
             this.btn__Menu_TacVu = new System.Windows.Forms.Button();
             this.button23 = new System.Windows.Forms.Button();
             this.button24 = new System.Windows.Forms.Button();
-            this.button25 = new System.Windows.Forms.Button();
+            this.btnQuanLyEmplyee = new System.Windows.Forms.Button();
             this.button26 = new System.Windows.Forms.Button();
             this.button27 = new System.Windows.Forms.Button();
             this.button28 = new System.Windows.Forms.Button();
@@ -429,14 +429,14 @@ namespace Project03_Design
             this.pnl__Menu_TacVu.Controls.Add(this.btn__Menu_TacVu);
             this.pnl__Menu_TacVu.Controls.Add(this.button23);
             this.pnl__Menu_TacVu.Controls.Add(this.button24);
-            this.pnl__Menu_TacVu.Controls.Add(this.button25);
+            this.pnl__Menu_TacVu.Controls.Add(this.btnQuanLyEmplyee);
             this.pnl__Menu_TacVu.Controls.Add(this.button26);
             this.pnl__Menu_TacVu.Controls.Add(this.button27);
             this.pnl__Menu_TacVu.Controls.Add(this.button28);
             this.pnl__Menu_TacVu.Location = new System.Drawing.Point(0, 348);
             this.pnl__Menu_TacVu.Margin = new System.Windows.Forms.Padding(0);
             this.pnl__Menu_TacVu.Name = "pnl__Menu_TacVu";
-            this.pnl__Menu_TacVu.Size = new System.Drawing.Size(250, 45);
+            this.pnl__Menu_TacVu.Size = new System.Drawing.Size(250, 211);
             this.pnl__Menu_TacVu.TabIndex = 6;
             // 
             // btn__Menu_TacVu
@@ -493,23 +493,24 @@ namespace Project03_Design
             this.button24.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button24.UseVisualStyleBackColor = false;
             // 
-            // button25
+            // btnQuanLyEmplyee
             // 
-            this.button25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(137)))), ((int)(((byte)(232)))));
-            this.button25.FlatAppearance.BorderSize = 0;
-            this.button25.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button25.Image = global::Project03_Design.Properties.Resources.user_groups_32px;
-            this.button25.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button25.Location = new System.Drawing.Point(0, 129);
-            this.button25.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(250, 40);
-            this.button25.TabIndex = 3;
-            this.button25.Text = "Quản lý tài khoản";
-            this.button25.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button25.UseVisualStyleBackColor = false;
+            this.btnQuanLyEmplyee.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(137)))), ((int)(((byte)(232)))));
+            this.btnQuanLyEmplyee.FlatAppearance.BorderSize = 0;
+            this.btnQuanLyEmplyee.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnQuanLyEmplyee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnQuanLyEmplyee.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQuanLyEmplyee.Image = global::Project03_Design.Properties.Resources.user_groups_32px;
+            this.btnQuanLyEmplyee.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnQuanLyEmplyee.Location = new System.Drawing.Point(0, 129);
+            this.btnQuanLyEmplyee.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.btnQuanLyEmplyee.Name = "btnQuanLyEmplyee";
+            this.btnQuanLyEmplyee.Size = new System.Drawing.Size(250, 40);
+            this.btnQuanLyEmplyee.TabIndex = 3;
+            this.btnQuanLyEmplyee.Text = "Quản lý nhân viên";
+            this.btnQuanLyEmplyee.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnQuanLyEmplyee.UseVisualStyleBackColor = false;
+            this.btnQuanLyEmplyee.Click += new System.EventHandler(this.btnQuanLyEmplyee_Click);
             // 
             // button26
             // 
@@ -569,7 +570,7 @@ namespace Project03_Design
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
             this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel4.Location = new System.Drawing.Point(3, 396);
+            this.panel4.Location = new System.Drawing.Point(3, 562);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(4, 0);
             this.panel4.TabIndex = 7;
@@ -815,7 +816,7 @@ namespace Project03_Design
         private System.Windows.Forms.Button btn__Menu_TacVu;
         private System.Windows.Forms.Button button23;
         private System.Windows.Forms.Button button24;
-        private System.Windows.Forms.Button button25;
+        private System.Windows.Forms.Button btnQuanLyEmplyee;
         private System.Windows.Forms.Button button26;
         private System.Windows.Forms.Button button27;
         private System.Windows.Forms.Button button28;
