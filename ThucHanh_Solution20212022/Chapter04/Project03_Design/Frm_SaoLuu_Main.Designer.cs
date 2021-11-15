@@ -103,7 +103,7 @@ namespace Project03_Design
             // 
             this.myTextBox.Dvalue = 0D;
             this.myTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.myTextBox.Location = new System.Drawing.Point(208, 149);
+            this.myTextBox.Location = new System.Drawing.Point(96, 93);
             this.myTextBox.Lvalue = ((long)(0));
             this.myTextBox.Name = "myTextBox";
             this.myTextBox.Size = new System.Drawing.Size(362, 35);
@@ -113,7 +113,7 @@ namespace Project03_Design
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(208, 225);
+            this.textBox1.Location = new System.Drawing.Point(96, 134);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(362, 35);
             this.textBox1.TabIndex = 4;
