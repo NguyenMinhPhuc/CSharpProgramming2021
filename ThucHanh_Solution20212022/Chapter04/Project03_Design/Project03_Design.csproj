@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AE71245F-B28B-4502-B3DD-07902F690160}</ProjectGuid>
+    <ProjectGuid>{F33C7A1C-183D-454D-B6BC-0E49CE404D22}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Project_QuaySoMayMan</RootNamespace>
-    <AssemblyName>Project_QuaySoMayMan</AssemblyName>
+    <RootNamespace>Project03_Design</RootNamespace>
+    <AssemblyName>Project03_Design</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,8 +33,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
-      <EmbedInteropTypes>True</EmbedInteropTypes>
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>..\..\..\..\..\..\..\..\..\CongTy\Done\1030_sGymVnApptech2020_GYM_Demo\active gym-hn\library\DevComponents.DotNetBar2.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -49,60 +49,52 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClsMain.cs" />
-    <Compile Include="Common\XuatFileExcel.cs" />
-    <Compile Include="DataLayer\Employee.cs" />
-    <Compile Include="DataLayer\EmployeeDao.cs" />
-    <Compile Include="DataLayer\NhanVienNhanGiaiDao.cs" />
-    <Compile Include="FrmLogin.cs">
+    <Compile Include="FrmDaskboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmLogin.Designer.cs">
-      <DependentUpon>FrmLogin.cs</DependentUpon>
+    <Compile Include="FrmDaskboard.Designer.cs">
+      <DependentUpon>FrmDaskboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmMain.cs">
+    <Compile Include="Frm_DoiMatKhau_Main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmMain.Designer.cs">
-      <DependentUpon>FrmMain.cs</DependentUpon>
+    <Compile Include="Frm_DoiMatKhau_Main.Designer.cs">
+      <DependentUpon>Frm_DoiMatKhau_Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmQuanLyEmployee_Modified.cs">
+    <Compile Include="Frm_Emplyee_Main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmQuanLyEmployee_Modified.Designer.cs">
-      <DependentUpon>FrmQuanLyEmployee_Modified.cs</DependentUpon>
+    <Compile Include="Frm_Emplyee_Main.Designer.cs">
+      <DependentUpon>Frm_Emplyee_Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmQuanLyEnployee_Main.cs">
+    <Compile Include="Frm_QuanLyTaiKhoan_Main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmQuanLyEnployee_Main.Designer.cs">
-      <DependentUpon>FrmQuanLyEnployee_Main.cs</DependentUpon>
+    <Compile Include="Frm_QuanLyTaiKhoan_Main.Designer.cs">
+      <DependentUpon>Frm_QuanLyTaiKhoan_Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmQuaySoMayMan.cs">
+    <Compile Include="Frm_SaoLuu_Main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmQuaySoMayMan.Designer.cs">
-      <DependentUpon>FrmQuaySoMayMan.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DataLayer\GiaiThuong.cs" />
-    <Compile Include="DataLayer\GiaiThuongDao.cs" />
-    <Compile Include="DataLayer\NhanVienNhanGiai.cs" />
-    <Compile Include="Frm_QuanLyNhanVienTrungThuong_Main.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Frm_QuanLyNhanVienTrungThuong_Main.Designer.cs">
-      <DependentUpon>Frm_QuanLyNhanVienTrungThuong_Main.cs</DependentUpon>
+    <Compile Include="Frm_SaoLuu_Main.Designer.cs">
+      <DependentUpon>Frm_SaoLuu_Main.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FrmMain.resx">
-      <DependentUpon>FrmMain.cs</DependentUpon>
+    <EmbeddedResource Include="FrmDaskboard.resx">
+      <DependentUpon>FrmDaskboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmQuaySoMayMan.resx">
-      <DependentUpon>FrmQuaySoMayMan.cs</DependentUpon>
+    <EmbeddedResource Include="Frm_DoiMatKhau_Main.resx">
+      <DependentUpon>Frm_DoiMatKhau_Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_QuanLyNhanVienTrungThuong_Main.resx">
-      <DependentUpon>Frm_QuanLyNhanVienTrungThuong_Main.cs</DependentUpon>
+    <EmbeddedResource Include="Frm_Emplyee_Main.resx">
+      <DependentUpon>Frm_Emplyee_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_QuanLyTaiKhoan_Main.resx">
+      <DependentUpon>Frm_QuanLyTaiKhoan_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_SaoLuu_Main.resx">
+      <DependentUpon>Frm_SaoLuu_Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -112,6 +104,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -127,13 +120,53 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BusinessLayer\" />
+    <None Include="Images\menu_32px.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="LibraryClass\LibraryClass.csproj">
-      <Project>{c31e6005-ee73-4507-b4bb-47ad5e53dcdc}</Project>
-      <Name>LibraryClass</Name>
+    <None Include="Images\power_off_button_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\system_administrator_male_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\access_denied_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\data_backup_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\key_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\logout_rounded_down_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\query_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\user_groups_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\bulleted_list_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\close_window_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\MyTextBox\MyLibrary.csproj">
+      <Project>{c5a13484-36be-4571-9f7b-a078fadf24c3}</Project>
+      <Name>MyLibrary</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MyLibrary_2021\MyLibrary_2021.csproj">
+      <Project>{7ca8b5a7-b930-473a-b163-10a26f019a7d}</Project>
+      <Name>MyLibrary_2021</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\file_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\file_32px_color.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
