@@ -55,6 +55,12 @@
     <Compile Include="FrmDaskboard.Designer.cs">
       <DependentUpon>FrmDaskboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_BaoCao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_BaoCao.Designer.cs">
+      <DependentUpon>Frm_BaoCao.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_DoiMatKhau_Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,10 +85,37 @@
     <Compile Include="Frm_SaoLuu_Main.Designer.cs">
       <DependentUpon>Frm_SaoLuu_Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_Use_UserControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Use_UserControl.Designer.cs">
+      <DependentUpon>Frm_Use_UserControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\uc_BaoCao01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\uc_BaoCao01.Designer.cs">
+      <DependentUpon>uc_BaoCao01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Uc_Table.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Uc_Table.Designer.cs">
+      <DependentUpon>Uc_Table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Uc_TextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Uc_TextBox.Designer.cs">
+      <DependentUpon>Uc_TextBox.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FrmDaskboard.resx">
       <DependentUpon>FrmDaskboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_BaoCao.resx">
+      <DependentUpon>Frm_BaoCao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_DoiMatKhau_Main.resx">
       <DependentUpon>Frm_DoiMatKhau_Main.cs</DependentUpon>
@@ -96,6 +129,9 @@
     <EmbeddedResource Include="Frm_SaoLuu_Main.resx">
       <DependentUpon>Frm_SaoLuu_Main.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Use_UserControl.resx">
+      <DependentUpon>Frm_Use_UserControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -106,6 +142,15 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UserControls\uc_BaoCao01.resx">
+      <DependentUpon>uc_BaoCao01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Uc_Table.resx">
+      <DependentUpon>Uc_Table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Uc_TextBox.resx">
+      <DependentUpon>Uc_TextBox.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

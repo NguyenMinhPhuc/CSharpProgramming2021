@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyLibrary", "MyTextBox\MyLi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyLibrary_2021", "Chapter04\MyLibrary_2021\MyLibrary_2021.csproj", "{7CA8B5A7-B930-473A-B163-10A26F019A7D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyTheme", "Chapter04\MyTheme\MyTheme.csproj", "{6F0727BC-EA9D-41CD-BD77-61DD66D13282}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -65,6 +67,10 @@ Global
 		{7CA8B5A7-B930-473A-B163-10A26F019A7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CA8B5A7-B930-473A-B163-10A26F019A7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CA8B5A7-B930-473A-B163-10A26F019A7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F0727BC-EA9D-41CD-BD77-61DD66D13282}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F0727BC-EA9D-41CD-BD77-61DD66D13282}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F0727BC-EA9D-41CD-BD77-61DD66D13282}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F0727BC-EA9D-41CD-BD77-61DD66D13282}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -78,6 +84,7 @@ Global
 		{F33C7A1C-183D-454D-B6BC-0E49CE404D22} = {D4CFDD46-365A-45AF-8F8F-2036ED211119}
 		{C5A13484-36BE-4571-9F7B-A078FADF24C3} = {D4CFDD46-365A-45AF-8F8F-2036ED211119}
 		{7CA8B5A7-B930-473A-B163-10A26F019A7D} = {D4CFDD46-365A-45AF-8F8F-2036ED211119}
+		{6F0727BC-EA9D-41CD-BD77-61DD66D13282} = {D4CFDD46-365A-45AF-8F8F-2036ED211119}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {40EC364F-D4A4-40B6-B12C-D8A052277A9B}
