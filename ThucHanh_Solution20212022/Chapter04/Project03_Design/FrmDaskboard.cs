@@ -267,5 +267,51 @@ namespace Project03_Design
                 tc_Main.SelectedTabIndex = tc_Main.Tabs.Count - 1;
             }
         }
+
+        private void btnUserControl_Click(object sender, EventArgs e)
+        {
+            this.trangThaiMoTa = true;
+            this.tieuDeTab = "Doi Mat Khau";
+
+            if (!CheckOpenTabs(tieuDeTab))
+            {
+                TabItem t = tc_Main.CreateTab(tieuDeTab);
+                t.Name = "Frm_Use_UserControl";
+                Frm_Use_UserControl frm = new Frm_Use_UserControl()
+                {
+                    DongTab = new Frm_Use_UserControl._deDongTab(DongTab),
+                    frm = this,
+                    TopLevel = false,
+                    Dock = DockStyle.Fill
+
+                };
+                t.AttachedControl.Controls.Add(frm);
+                frm.Show();
+                tc_Main.SelectedTabIndex = tc_Main.Tabs.Count - 1;
+            }
+        }
+
+        private void btnBaoCao_Click(object sender, EventArgs e)
+        {
+            this.trangThaiMoTa = true;
+            this.tieuDeTab = "Doi Mat Khau";
+
+            if (!CheckOpenTabs(tieuDeTab))
+            {
+                TabItem t = tc_Main.CreateTab(tieuDeTab);
+                t.Name = "Frm_BaoCao";
+                Frm_BaoCao frm = new Frm_BaoCao()
+                {
+                    DongTab = new Frm_BaoCao._deDongTab(DongTab),
+                    frm = this,
+                    TopLevel = false,
+                    Dock = DockStyle.Fill
+
+                };
+                t.AttachedControl.Controls.Add(frm);
+                frm.Show();
+                tc_Main.SelectedTabIndex = tc_Main.Tabs.Count - 1;
+            }
+        }
     }
 }

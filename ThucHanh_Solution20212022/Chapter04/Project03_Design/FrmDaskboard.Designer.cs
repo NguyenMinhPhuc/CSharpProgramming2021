@@ -54,9 +54,9 @@ namespace Project03_Design
             this.pnl__Menu_TacVu = new System.Windows.Forms.FlowLayoutPanel();
             this.btn__Menu_TacVu = new System.Windows.Forms.Button();
             this.button23 = new System.Windows.Forms.Button();
-            this.button24 = new System.Windows.Forms.Button();
+            this.btnUserControl = new System.Windows.Forms.Button();
             this.btnQuanLyEmplyee = new System.Windows.Forms.Button();
-            this.button26 = new System.Windows.Forms.Button();
+            this.btnBaoCao = new System.Windows.Forms.Button();
             this.button27 = new System.Windows.Forms.Button();
             this.button28 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -92,9 +92,9 @@ namespace Project03_Design
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
             this.lbl__TenDangNhap});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 619);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 705);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1213, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(1655, 22);
             this.statusStrip1.TabIndex = 0;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -118,7 +118,7 @@ namespace Project03_Design
             this.pnl__Left_Menu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnl__Left_Menu.Location = new System.Drawing.Point(0, 0);
             this.pnl__Left_Menu.Name = "pnl__Left_Menu";
-            this.pnl__Left_Menu.Size = new System.Drawing.Size(250, 619);
+            this.pnl__Left_Menu.Size = new System.Drawing.Size(250, 705);
             this.pnl__Left_Menu.TabIndex = 1;
             // 
             // pnl_left_menu2
@@ -131,7 +131,7 @@ namespace Project03_Design
             this.pnl_left_menu2.Location = new System.Drawing.Point(0, 50);
             this.pnl_left_menu2.Margin = new System.Windows.Forms.Padding(0);
             this.pnl_left_menu2.Name = "pnl_left_menu2";
-            this.pnl_left_menu2.Size = new System.Drawing.Size(250, 569);
+            this.pnl_left_menu2.Size = new System.Drawing.Size(250, 655);
             this.pnl_left_menu2.TabIndex = 4;
             // 
             // pnl__Menu_HeThong
@@ -428,9 +428,9 @@ namespace Project03_Design
             this.pnl__Menu_TacVu.BackColor = System.Drawing.Color.White;
             this.pnl__Menu_TacVu.Controls.Add(this.btn__Menu_TacVu);
             this.pnl__Menu_TacVu.Controls.Add(this.button23);
-            this.pnl__Menu_TacVu.Controls.Add(this.button24);
+            this.pnl__Menu_TacVu.Controls.Add(this.btnUserControl);
             this.pnl__Menu_TacVu.Controls.Add(this.btnQuanLyEmplyee);
-            this.pnl__Menu_TacVu.Controls.Add(this.button26);
+            this.pnl__Menu_TacVu.Controls.Add(this.btnBaoCao);
             this.pnl__Menu_TacVu.Controls.Add(this.button27);
             this.pnl__Menu_TacVu.Controls.Add(this.button28);
             this.pnl__Menu_TacVu.Location = new System.Drawing.Point(0, 348);
@@ -475,23 +475,24 @@ namespace Project03_Design
             this.button23.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button23.UseVisualStyleBackColor = false;
             // 
-            // button24
+            // btnUserControl
             // 
-            this.button24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(137)))), ((int)(((byte)(232)))));
-            this.button24.FlatAppearance.BorderSize = 0;
-            this.button24.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button24.Image = global::Project03_Design.Properties.Resources.key_32px;
-            this.button24.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button24.Location = new System.Drawing.Point(0, 86);
-            this.button24.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(250, 40);
-            this.button24.TabIndex = 2;
-            this.button24.Text = "Đổi mật khẩu";
-            this.button24.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button24.UseVisualStyleBackColor = false;
+            this.btnUserControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(137)))), ((int)(((byte)(232)))));
+            this.btnUserControl.FlatAppearance.BorderSize = 0;
+            this.btnUserControl.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnUserControl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUserControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUserControl.Image = global::Project03_Design.Properties.Resources.key_32px;
+            this.btnUserControl.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUserControl.Location = new System.Drawing.Point(0, 86);
+            this.btnUserControl.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.btnUserControl.Name = "btnUserControl";
+            this.btnUserControl.Size = new System.Drawing.Size(250, 40);
+            this.btnUserControl.TabIndex = 2;
+            this.btnUserControl.Text = "UserControl";
+            this.btnUserControl.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnUserControl.UseVisualStyleBackColor = false;
+            this.btnUserControl.Click += new System.EventHandler(this.btnUserControl_Click);
             // 
             // btnQuanLyEmplyee
             // 
@@ -512,23 +513,24 @@ namespace Project03_Design
             this.btnQuanLyEmplyee.UseVisualStyleBackColor = false;
             this.btnQuanLyEmplyee.Click += new System.EventHandler(this.btnQuanLyEmplyee_Click);
             // 
-            // button26
+            // btnBaoCao
             // 
-            this.button26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(137)))), ((int)(((byte)(232)))));
-            this.button26.FlatAppearance.BorderSize = 0;
-            this.button26.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button26.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button26.Image = global::Project03_Design.Properties.Resources.query_32px;
-            this.button26.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button26.Location = new System.Drawing.Point(0, 172);
-            this.button26.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(250, 40);
-            this.button26.TabIndex = 4;
-            this.button26.Text = "Phân quyền";
-            this.button26.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button26.UseVisualStyleBackColor = false;
+            this.btnBaoCao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(137)))), ((int)(((byte)(232)))));
+            this.btnBaoCao.FlatAppearance.BorderSize = 0;
+            this.btnBaoCao.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnBaoCao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBaoCao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBaoCao.Image = global::Project03_Design.Properties.Resources.query_32px;
+            this.btnBaoCao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBaoCao.Location = new System.Drawing.Point(0, 172);
+            this.btnBaoCao.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.btnBaoCao.Name = "btnBaoCao";
+            this.btnBaoCao.Size = new System.Drawing.Size(250, 40);
+            this.btnBaoCao.TabIndex = 4;
+            this.btnBaoCao.Text = "Báo cáo";
+            this.btnBaoCao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnBaoCao.UseVisualStyleBackColor = false;
+            this.btnBaoCao.Click += new System.EventHandler(this.btnBaoCao_Click);
             // 
             // button27
             // 
@@ -631,7 +633,7 @@ namespace Project03_Design
             this.pnl__Top_Menu.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl__Top_Menu.Location = new System.Drawing.Point(250, 0);
             this.pnl__Top_Menu.Name = "pnl__Top_Menu";
-            this.pnl__Top_Menu.Size = new System.Drawing.Size(963, 50);
+            this.pnl__Top_Menu.Size = new System.Drawing.Size(1405, 50);
             this.pnl__Top_Menu.TabIndex = 2;
             // 
             // panel5
@@ -647,7 +649,7 @@ namespace Project03_Design
             // 
             this.lblTime.Dock = System.Windows.Forms.DockStyle.Right;
             this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTime.Location = new System.Drawing.Point(592, 0);
+            this.lblTime.Location = new System.Drawing.Point(1034, 0);
             this.lblTime.Name = "lblTime";
             this.lblTime.Size = new System.Drawing.Size(317, 46);
             this.lblTime.TabIndex = 3;
@@ -680,7 +682,7 @@ namespace Project03_Design
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(909, 0);
+            this.panel3.Location = new System.Drawing.Point(1351, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(4, 46);
             this.panel3.TabIndex = 3;
@@ -693,7 +695,7 @@ namespace Project03_Design
             this.btn__ThoatChuongTrinh.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.btn__ThoatChuongTrinh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn__ThoatChuongTrinh.Image = global::Project03_Design.Properties.Resources.close_window_32px;
-            this.btn__ThoatChuongTrinh.Location = new System.Drawing.Point(913, 0);
+            this.btn__ThoatChuongTrinh.Location = new System.Drawing.Point(1355, 0);
             this.btn__ThoatChuongTrinh.Margin = new System.Windows.Forms.Padding(0);
             this.btn__ThoatChuongTrinh.Name = "btn__ThoatChuongTrinh";
             this.btn__ThoatChuongTrinh.Size = new System.Drawing.Size(50, 46);
@@ -707,7 +709,7 @@ namespace Project03_Design
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 46);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(963, 4);
+            this.panel1.Size = new System.Drawing.Size(1405, 4);
             this.panel1.TabIndex = 4;
             // 
             // timer1
@@ -744,7 +746,7 @@ namespace Project03_Design
             this.tc_Main.Name = "tc_Main";
             this.tc_Main.SelectedTabFont = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.tc_Main.SelectedTabIndex = -1;
-            this.tc_Main.Size = new System.Drawing.Size(963, 569);
+            this.tc_Main.Size = new System.Drawing.Size(1405, 655);
             this.tc_Main.Style = DevComponents.DotNetBar.eTabStripStyle.Office2007Document;
             this.tc_Main.TabIndex = 7;
             this.tc_Main.TabLayoutType = DevComponents.DotNetBar.eTabLayoutType.FixedWithNavigationBox;
@@ -756,7 +758,7 @@ namespace Project03_Design
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1213, 641);
+            this.ClientSize = new System.Drawing.Size(1655, 727);
             this.Controls.Add(this.tc_Main);
             this.Controls.Add(this.pnl__Top_Menu);
             this.Controls.Add(this.pnl__Left_Menu);
@@ -815,9 +817,9 @@ namespace Project03_Design
         private System.Windows.Forms.FlowLayoutPanel pnl__Menu_TacVu;
         private System.Windows.Forms.Button btn__Menu_TacVu;
         private System.Windows.Forms.Button button23;
-        private System.Windows.Forms.Button button24;
+        private System.Windows.Forms.Button btnUserControl;
         private System.Windows.Forms.Button btnQuanLyEmplyee;
-        private System.Windows.Forms.Button button26;
+        private System.Windows.Forms.Button btnBaoCao;
         private System.Windows.Forms.Button button27;
         private System.Windows.Forms.Button button28;
         private System.Windows.Forms.Panel panel1;
