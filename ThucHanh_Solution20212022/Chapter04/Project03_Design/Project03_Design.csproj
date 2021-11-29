@@ -55,6 +55,12 @@
     <Compile Include="FrmDaskboard.Designer.cs">
       <DependentUpon>FrmDaskboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmTabControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTabControl.Designer.cs">
+      <DependentUpon>FrmTabControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_BaoCao.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +78,12 @@
     </Compile>
     <Compile Include="Frm_Emplyee_Main.Designer.cs">
       <DependentUpon>Frm_Emplyee_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Login.Designer.cs">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm_QuanLyTaiKhoan_Main.cs">
       <SubType>Form</SubType>
@@ -114,6 +126,9 @@
     <EmbeddedResource Include="FrmDaskboard.resx">
       <DependentUpon>FrmDaskboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmTabControl.resx">
+      <DependentUpon>FrmTabControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_BaoCao.resx">
       <DependentUpon>Frm_BaoCao.cs</DependentUpon>
     </EmbeddedResource>
@@ -122,6 +137,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Emplyee_Main.resx">
       <DependentUpon>Frm_Emplyee_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Login.resx">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_QuanLyTaiKhoan_Main.resx">
       <DependentUpon>Frm_QuanLyTaiKhoan_Main.cs</DependentUpon>

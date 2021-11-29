@@ -30,39 +30,18 @@ namespace Project03_Design
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDaskboard));
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.lbl__TenDangNhap = new System.Windows.Forms.ToolStripStatusLabel();
             this.pnl__Left_Menu = new System.Windows.Forms.Panel();
             this.pnl_left_menu2 = new System.Windows.Forms.FlowLayoutPanel();
             this.pnl__Menu_HeThong = new System.Windows.Forms.FlowLayoutPanel();
-            this.btn__HeThong = new System.Windows.Forms.Button();
-            this.btnSaoLuu = new System.Windows.Forms.Button();
-            this.btnDoiMatKhau = new System.Windows.Forms.Button();
-            this.btnQuanLyTaiKhoan = new System.Windows.Forms.Button();
-            this.btnPhanQuyen = new System.Windows.Forms.Button();
-            this.btnDangXuat = new System.Windows.Forms.Button();
-            this.btnThoat = new System.Windows.Forms.Button();
             this.pnl__DanhMuc = new System.Windows.Forms.FlowLayoutPanel();
-            this.btn__Menu_DanhMuc = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
             this.pnl__Menu_TacVu = new System.Windows.Forms.FlowLayoutPanel();
-            this.btn__Menu_TacVu = new System.Windows.Forms.Button();
-            this.button23 = new System.Windows.Forms.Button();
-            this.btnUserControl = new System.Windows.Forms.Button();
-            this.btnQuanLyEmplyee = new System.Windows.Forms.Button();
-            this.btnBaoCao = new System.Windows.Forms.Button();
-            this.button27 = new System.Windows.Forms.Button();
-            this.button28 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pnl__Left_Headbar = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.pcb__Menuheader = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pnl__Top_Menu = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -70,10 +49,41 @@ namespace Project03_Design
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.btn__ThoatChuongTrinh = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.tc_Main = new DevComponents.DotNetBar.TabControl();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.printsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.getDataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.minToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.maxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.btn__ThoatChuongTrinh = new System.Windows.Forms.Button();
+            this.btn__HeThong = new System.Windows.Forms.Button();
+            this.btnSaoLuu = new System.Windows.Forms.Button();
+            this.btnDoiMatKhau = new System.Windows.Forms.Button();
+            this.btnQuanLyTaiKhoan = new System.Windows.Forms.Button();
+            this.btnPhanQuyen = new System.Windows.Forms.Button();
+            this.btnDangXuat = new System.Windows.Forms.Button();
+            this.btnThoat = new System.Windows.Forms.Button();
+            this.btn__Menu_DanhMuc = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.btn__Menu_TacVu = new System.Windows.Forms.Button();
+            this.button23 = new System.Windows.Forms.Button();
+            this.btnUserControl = new System.Windows.Forms.Button();
+            this.btnQuanLyEmplyee = new System.Windows.Forms.Button();
+            this.btnBaoCao = new System.Windows.Forms.Button();
+            this.button27 = new System.Windows.Forms.Button();
+            this.button28 = new System.Windows.Forms.Button();
+            this.pcb__Menuheader = new System.Windows.Forms.PictureBox();
             this.statusStrip1.SuspendLayout();
             this.pnl__Left_Menu.SuspendLayout();
             this.pnl_left_menu2.SuspendLayout();
@@ -81,9 +91,10 @@ namespace Project03_Design
             this.pnl__DanhMuc.SuspendLayout();
             this.pnl__Menu_TacVu.SuspendLayout();
             this.pnl__Left_Headbar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb__Menuheader)).BeginInit();
             this.pnl__Top_Menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tc_Main)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb__Menuheader)).BeginInit();
             this.SuspendLayout();
             // 
             // statusStrip1
@@ -147,8 +158,281 @@ namespace Project03_Design
             this.pnl__Menu_HeThong.Location = new System.Drawing.Point(0, 0);
             this.pnl__Menu_HeThong.Margin = new System.Windows.Forms.Padding(0);
             this.pnl__Menu_HeThong.Name = "pnl__Menu_HeThong";
-            this.pnl__Menu_HeThong.Size = new System.Drawing.Size(250, 303);
+            this.pnl__Menu_HeThong.Size = new System.Drawing.Size(250, 42);
             this.pnl__Menu_HeThong.TabIndex = 4;
+            // 
+            // pnl__DanhMuc
+            // 
+            this.pnl__DanhMuc.BackColor = System.Drawing.Color.White;
+            this.pnl__DanhMuc.Controls.Add(this.btn__Menu_DanhMuc);
+            this.pnl__DanhMuc.Controls.Add(this.button8);
+            this.pnl__DanhMuc.Controls.Add(this.button9);
+            this.pnl__DanhMuc.Controls.Add(this.button10);
+            this.pnl__DanhMuc.Controls.Add(this.button11);
+            this.pnl__DanhMuc.Controls.Add(this.button12);
+            this.pnl__DanhMuc.Controls.Add(this.button13);
+            this.pnl__DanhMuc.Location = new System.Drawing.Point(0, 42);
+            this.pnl__DanhMuc.Margin = new System.Windows.Forms.Padding(0);
+            this.pnl__DanhMuc.Name = "pnl__DanhMuc";
+            this.pnl__DanhMuc.Size = new System.Drawing.Size(250, 45);
+            this.pnl__DanhMuc.TabIndex = 5;
+            // 
+            // pnl__Menu_TacVu
+            // 
+            this.pnl__Menu_TacVu.BackColor = System.Drawing.Color.White;
+            this.pnl__Menu_TacVu.Controls.Add(this.btn__Menu_TacVu);
+            this.pnl__Menu_TacVu.Controls.Add(this.button23);
+            this.pnl__Menu_TacVu.Controls.Add(this.btnUserControl);
+            this.pnl__Menu_TacVu.Controls.Add(this.btnQuanLyEmplyee);
+            this.pnl__Menu_TacVu.Controls.Add(this.btnBaoCao);
+            this.pnl__Menu_TacVu.Controls.Add(this.button27);
+            this.pnl__Menu_TacVu.Controls.Add(this.button28);
+            this.pnl__Menu_TacVu.Location = new System.Drawing.Point(0, 87);
+            this.pnl__Menu_TacVu.Margin = new System.Windows.Forms.Padding(0);
+            this.pnl__Menu_TacVu.Name = "pnl__Menu_TacVu";
+            this.pnl__Menu_TacVu.Size = new System.Drawing.Size(250, 414);
+            this.pnl__Menu_TacVu.TabIndex = 6;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel4.Location = new System.Drawing.Point(3, 504);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(4, 0);
+            this.panel4.TabIndex = 7;
+            // 
+            // pnl__Left_Headbar
+            // 
+            this.pnl__Left_Headbar.Controls.Add(this.label1);
+            this.pnl__Left_Headbar.Controls.Add(this.pcb__Menuheader);
+            this.pnl__Left_Headbar.Controls.Add(this.panel2);
+            this.pnl__Left_Headbar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl__Left_Headbar.Location = new System.Drawing.Point(0, 0);
+            this.pnl__Left_Headbar.Name = "pnl__Left_Headbar";
+            this.pnl__Left_Headbar.Size = new System.Drawing.Size(250, 50);
+            this.pnl__Left_Headbar.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(50, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(200, 46);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Hỗ trợ giáo viên";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 46);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(250, 4);
+            this.panel2.TabIndex = 2;
+            // 
+            // pnl__Top_Menu
+            // 
+            this.pnl__Top_Menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(78)))), ((int)(((byte)(157)))));
+            this.pnl__Top_Menu.Controls.Add(this.panel5);
+            this.pnl__Top_Menu.Controls.Add(this.lblTime);
+            this.pnl__Top_Menu.Controls.Add(this.button1);
+            this.pnl__Top_Menu.Controls.Add(this.textBox1);
+            this.pnl__Top_Menu.Controls.Add(this.panel3);
+            this.pnl__Top_Menu.Controls.Add(this.btn__ThoatChuongTrinh);
+            this.pnl__Top_Menu.Controls.Add(this.panel1);
+            this.pnl__Top_Menu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl__Top_Menu.Location = new System.Drawing.Point(250, 0);
+            this.pnl__Top_Menu.Name = "pnl__Top_Menu";
+            this.pnl__Top_Menu.Size = new System.Drawing.Size(1405, 50);
+            this.pnl__Top_Menu.TabIndex = 2;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(4, 46);
+            this.panel5.TabIndex = 3;
+            // 
+            // lblTime
+            // 
+            this.lblTime.Dock = System.Windows.Forms.DockStyle.Right;
+            this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTime.Location = new System.Drawing.Point(1034, 0);
+            this.lblTime.Name = "lblTime";
+            this.lblTime.Size = new System.Drawing.Size(317, 46);
+            this.lblTime.TabIndex = 3;
+            this.lblTime.Text = "01-11-2021 09:50:00";
+            this.lblTime.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(183)))), ((int)(((byte)(68)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(306, 9);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(148, 29);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Tim kiếm";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(10, 9);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(294, 29);
+            this.textBox1.TabIndex = 0;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel3.Location = new System.Drawing.Point(1351, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(4, 46);
+            this.panel3.TabIndex = 3;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 46);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1405, 4);
+            this.panel1.TabIndex = 4;
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // tc_Main
+            // 
+            this.tc_Main.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(72)))), ((int)(((byte)(131)))));
+            this.tc_Main.CanReorderTabs = true;
+            this.tc_Main.CloseButtonOnTabsVisible = true;
+            this.tc_Main.CloseButtonPosition = DevComponents.DotNetBar.eTabCloseButtonPosition.Right;
+            this.tc_Main.ColorScheme.TabBackground = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
+            this.tc_Main.ColorScheme.TabBackground2 = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
+            this.tc_Main.ColorScheme.TabItemBackgroundColorBlend.AddRange(new DevComponents.DotNetBar.BackgroundColorBlend[] {
+            new DevComponents.DotNetBar.BackgroundColorBlend(System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(230)))), ((int)(((byte)(249))))), 0F),
+            new DevComponents.DotNetBar.BackgroundColorBlend(System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(220)))), ((int)(((byte)(248))))), 0.45F),
+            new DevComponents.DotNetBar.BackgroundColorBlend(System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(208)))), ((int)(((byte)(245))))), 0.45F),
+            new DevComponents.DotNetBar.BackgroundColorBlend(System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(229)))), ((int)(((byte)(247))))), 1F)});
+            this.tc_Main.ColorScheme.TabItemHotBackgroundColorBlend.AddRange(new DevComponents.DotNetBar.BackgroundColorBlend[] {
+            new DevComponents.DotNetBar.BackgroundColorBlend(System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(253)))), ((int)(((byte)(235))))), 0F),
+            new DevComponents.DotNetBar.BackgroundColorBlend(System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(236)))), ((int)(((byte)(168))))), 0.45F),
+            new DevComponents.DotNetBar.BackgroundColorBlend(System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(218)))), ((int)(((byte)(89))))), 0.45F),
+            new DevComponents.DotNetBar.BackgroundColorBlend(System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(230)))), ((int)(((byte)(141))))), 1F)});
+            this.tc_Main.ColorScheme.TabItemSelectedBackgroundColorBlend.AddRange(new DevComponents.DotNetBar.BackgroundColorBlend[] {
+            new DevComponents.DotNetBar.BackgroundColorBlend(System.Drawing.Color.White, 0F),
+            new DevComponents.DotNetBar.BackgroundColorBlend(System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(254))))), 0.45F),
+            new DevComponents.DotNetBar.BackgroundColorBlend(System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(254))))), 0.45F),
+            new DevComponents.DotNetBar.BackgroundColorBlend(System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(254))))), 1F)});
+            this.tc_Main.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tc_Main.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tc_Main.Location = new System.Drawing.Point(250, 50);
+            this.tc_Main.Name = "tc_Main";
+            this.tc_Main.SelectedTabFont = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.tc_Main.SelectedTabIndex = -1;
+            this.tc_Main.Size = new System.Drawing.Size(1405, 655);
+            this.tc_Main.Style = DevComponents.DotNetBar.eTabStripStyle.Office2007Document;
+            this.tc_Main.TabIndex = 7;
+            this.tc_Main.TabLayoutType = DevComponents.DotNetBar.eTabLayoutType.FixedWithNavigationBox;
+            this.tc_Main.Text = "tabControl1";
+            this.tc_Main.TabItemClose += new DevComponents.DotNetBar.TabStrip.UserActionEventHandler(this.tc_Main_TabItemClose);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.saveToolStripMenuItem,
+            this.saveAsToolStripMenuItem,
+            this.printsToolStripMenuItem,
+            this.getDataToolStripMenuItem,
+            this.minToolStripMenuItem,
+            this.maxToolStripMenuItem,
+            this.exitToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(120, 158);
+            // 
+            // saveToolStripMenuItem
+            // 
+            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.saveToolStripMenuItem.Text = "Save";
+            // 
+            // saveAsToolStripMenuItem
+            // 
+            this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.saveAsToolStripMenuItem.Text = "Save as";
+            // 
+            // printsToolStripMenuItem
+            // 
+            this.printsToolStripMenuItem.Name = "printsToolStripMenuItem";
+            this.printsToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.printsToolStripMenuItem.Text = "Prints";
+            // 
+            // getDataToolStripMenuItem
+            // 
+            this.getDataToolStripMenuItem.Name = "getDataToolStripMenuItem";
+            this.getDataToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.getDataToolStripMenuItem.Text = "Get Data";
+            // 
+            // minToolStripMenuItem
+            // 
+            this.minToolStripMenuItem.Name = "minToolStripMenuItem";
+            this.minToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.minToolStripMenuItem.Text = "Min";
+            this.minToolStripMenuItem.Click += new System.EventHandler(this.minToolStripMenuItem_Click);
+            // 
+            // maxToolStripMenuItem
+            // 
+            this.maxToolStripMenuItem.Name = "maxToolStripMenuItem";
+            this.maxToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.maxToolStripMenuItem.Text = "Max";
+            this.maxToolStripMenuItem.Click += new System.EventHandler(this.maxToolStripMenuItem_Click);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // notifyIcon1
+            // 
+            this.notifyIcon1.BalloonTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.notifyIcon1.BalloonTipText = "Chương trình Project 03";
+            this.notifyIcon1.BalloonTipTitle = "Thông tin";
+            this.notifyIcon1.ContextMenuStrip = this.contextMenuStrip1;
+            this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
+            this.notifyIcon1.Text = "Chương trình Project 03";
+            this.notifyIcon1.Visible = true;
+            // 
+            // btn__ThoatChuongTrinh
+            // 
+            this.btn__ThoatChuongTrinh.BackColor = System.Drawing.Color.Transparent;
+            this.btn__ThoatChuongTrinh.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btn__ThoatChuongTrinh.FlatAppearance.BorderSize = 0;
+            this.btn__ThoatChuongTrinh.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.btn__ThoatChuongTrinh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn__ThoatChuongTrinh.Image = global::Project03_Design.Properties.Resources.close_window_32px;
+            this.btn__ThoatChuongTrinh.Location = new System.Drawing.Point(1355, 0);
+            this.btn__ThoatChuongTrinh.Margin = new System.Windows.Forms.Padding(0);
+            this.btn__ThoatChuongTrinh.Name = "btn__ThoatChuongTrinh";
+            this.btn__ThoatChuongTrinh.Size = new System.Drawing.Size(50, 46);
+            this.btn__ThoatChuongTrinh.TabIndex = 2;
+            this.btn__ThoatChuongTrinh.UseVisualStyleBackColor = false;
+            this.btn__ThoatChuongTrinh.Click += new System.EventHandler(this.btn__ThoatChuongTrinh_Click);
             // 
             // btn__HeThong
             // 
@@ -281,22 +565,6 @@ namespace Project03_Design
             this.btnThoat.UseVisualStyleBackColor = false;
             this.btnThoat.Click += new System.EventHandler(this.button7_Click);
             // 
-            // pnl__DanhMuc
-            // 
-            this.pnl__DanhMuc.BackColor = System.Drawing.Color.White;
-            this.pnl__DanhMuc.Controls.Add(this.btn__Menu_DanhMuc);
-            this.pnl__DanhMuc.Controls.Add(this.button8);
-            this.pnl__DanhMuc.Controls.Add(this.button9);
-            this.pnl__DanhMuc.Controls.Add(this.button10);
-            this.pnl__DanhMuc.Controls.Add(this.button11);
-            this.pnl__DanhMuc.Controls.Add(this.button12);
-            this.pnl__DanhMuc.Controls.Add(this.button13);
-            this.pnl__DanhMuc.Location = new System.Drawing.Point(0, 303);
-            this.pnl__DanhMuc.Margin = new System.Windows.Forms.Padding(0);
-            this.pnl__DanhMuc.Name = "pnl__DanhMuc";
-            this.pnl__DanhMuc.Size = new System.Drawing.Size(250, 45);
-            this.pnl__DanhMuc.TabIndex = 5;
-            // 
             // btn__Menu_DanhMuc
             // 
             this.btn__Menu_DanhMuc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(78)))), ((int)(((byte)(157)))));
@@ -423,22 +691,6 @@ namespace Project03_Design
             this.button13.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button13.UseVisualStyleBackColor = false;
             // 
-            // pnl__Menu_TacVu
-            // 
-            this.pnl__Menu_TacVu.BackColor = System.Drawing.Color.White;
-            this.pnl__Menu_TacVu.Controls.Add(this.btn__Menu_TacVu);
-            this.pnl__Menu_TacVu.Controls.Add(this.button23);
-            this.pnl__Menu_TacVu.Controls.Add(this.btnUserControl);
-            this.pnl__Menu_TacVu.Controls.Add(this.btnQuanLyEmplyee);
-            this.pnl__Menu_TacVu.Controls.Add(this.btnBaoCao);
-            this.pnl__Menu_TacVu.Controls.Add(this.button27);
-            this.pnl__Menu_TacVu.Controls.Add(this.button28);
-            this.pnl__Menu_TacVu.Location = new System.Drawing.Point(0, 348);
-            this.pnl__Menu_TacVu.Margin = new System.Windows.Forms.Padding(0);
-            this.pnl__Menu_TacVu.Name = "pnl__Menu_TacVu";
-            this.pnl__Menu_TacVu.Size = new System.Drawing.Size(250, 211);
-            this.pnl__Menu_TacVu.TabIndex = 6;
-            // 
             // btn__Menu_TacVu
             // 
             this.btn__Menu_TacVu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(78)))), ((int)(((byte)(157)))));
@@ -549,6 +801,7 @@ namespace Project03_Design
             this.button27.Text = "Đăng xuất";
             this.button27.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button27.UseVisualStyleBackColor = false;
+            this.button27.Click += new System.EventHandler(this.button27_Click);
             // 
             // button28
             // 
@@ -568,37 +821,6 @@ namespace Project03_Design
             this.button28.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button28.UseVisualStyleBackColor = false;
             // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel4.Location = new System.Drawing.Point(3, 562);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(4, 0);
-            this.panel4.TabIndex = 7;
-            // 
-            // pnl__Left_Headbar
-            // 
-            this.pnl__Left_Headbar.Controls.Add(this.label1);
-            this.pnl__Left_Headbar.Controls.Add(this.pcb__Menuheader);
-            this.pnl__Left_Headbar.Controls.Add(this.panel2);
-            this.pnl__Left_Headbar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl__Left_Headbar.Location = new System.Drawing.Point(0, 0);
-            this.pnl__Left_Headbar.Name = "pnl__Left_Headbar";
-            this.pnl__Left_Headbar.Size = new System.Drawing.Size(250, 50);
-            this.pnl__Left_Headbar.TabIndex = 3;
-            // 
-            // label1
-            // 
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(50, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(200, 46);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Hỗ trợ giáo viên";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // pcb__Menuheader
             // 
             this.pcb__Menuheader.Dock = System.Windows.Forms.DockStyle.Left;
@@ -611,160 +833,20 @@ namespace Project03_Design
             this.pcb__Menuheader.TabStop = false;
             this.pcb__Menuheader.Click += new System.EventHandler(this.pcb__Menuheader_Click);
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 46);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(250, 4);
-            this.panel2.TabIndex = 2;
-            // 
-            // pnl__Top_Menu
-            // 
-            this.pnl__Top_Menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(78)))), ((int)(((byte)(157)))));
-            this.pnl__Top_Menu.Controls.Add(this.panel5);
-            this.pnl__Top_Menu.Controls.Add(this.lblTime);
-            this.pnl__Top_Menu.Controls.Add(this.button1);
-            this.pnl__Top_Menu.Controls.Add(this.textBox1);
-            this.pnl__Top_Menu.Controls.Add(this.panel3);
-            this.pnl__Top_Menu.Controls.Add(this.btn__ThoatChuongTrinh);
-            this.pnl__Top_Menu.Controls.Add(this.panel1);
-            this.pnl__Top_Menu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl__Top_Menu.Location = new System.Drawing.Point(250, 0);
-            this.pnl__Top_Menu.Name = "pnl__Top_Menu";
-            this.pnl__Top_Menu.Size = new System.Drawing.Size(1405, 50);
-            this.pnl__Top_Menu.TabIndex = 2;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel5.Location = new System.Drawing.Point(0, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(4, 46);
-            this.panel5.TabIndex = 3;
-            // 
-            // lblTime
-            // 
-            this.lblTime.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTime.Location = new System.Drawing.Point(1034, 0);
-            this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(317, 46);
-            this.lblTime.TabIndex = 3;
-            this.lblTime.Text = "01-11-2021 09:50:00";
-            this.lblTime.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(183)))), ((int)(((byte)(68)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(306, 9);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(148, 29);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Tim kiếm";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(10, 9);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(294, 29);
-            this.textBox1.TabIndex = 0;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(1351, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(4, 46);
-            this.panel3.TabIndex = 3;
-            // 
-            // btn__ThoatChuongTrinh
-            // 
-            this.btn__ThoatChuongTrinh.BackColor = System.Drawing.Color.Transparent;
-            this.btn__ThoatChuongTrinh.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btn__ThoatChuongTrinh.FlatAppearance.BorderSize = 0;
-            this.btn__ThoatChuongTrinh.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.btn__ThoatChuongTrinh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn__ThoatChuongTrinh.Image = global::Project03_Design.Properties.Resources.close_window_32px;
-            this.btn__ThoatChuongTrinh.Location = new System.Drawing.Point(1355, 0);
-            this.btn__ThoatChuongTrinh.Margin = new System.Windows.Forms.Padding(0);
-            this.btn__ThoatChuongTrinh.Name = "btn__ThoatChuongTrinh";
-            this.btn__ThoatChuongTrinh.Size = new System.Drawing.Size(50, 46);
-            this.btn__ThoatChuongTrinh.TabIndex = 2;
-            this.btn__ThoatChuongTrinh.UseVisualStyleBackColor = false;
-            this.btn__ThoatChuongTrinh.Click += new System.EventHandler(this.btn__ThoatChuongTrinh_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 46);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1405, 4);
-            this.panel1.TabIndex = 4;
-            // 
-            // timer1
-            // 
-            this.timer1.Interval = 1000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // tc_Main
-            // 
-            this.tc_Main.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(72)))), ((int)(((byte)(131)))));
-            this.tc_Main.CanReorderTabs = true;
-            this.tc_Main.CloseButtonOnTabsVisible = true;
-            this.tc_Main.CloseButtonPosition = DevComponents.DotNetBar.eTabCloseButtonPosition.Right;
-            this.tc_Main.ColorScheme.TabBackground = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
-            this.tc_Main.ColorScheme.TabBackground2 = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
-            this.tc_Main.ColorScheme.TabItemBackgroundColorBlend.AddRange(new DevComponents.DotNetBar.BackgroundColorBlend[] {
-            new DevComponents.DotNetBar.BackgroundColorBlend(System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(230)))), ((int)(((byte)(249))))), 0F),
-            new DevComponents.DotNetBar.BackgroundColorBlend(System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(220)))), ((int)(((byte)(248))))), 0.45F),
-            new DevComponents.DotNetBar.BackgroundColorBlend(System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(208)))), ((int)(((byte)(245))))), 0.45F),
-            new DevComponents.DotNetBar.BackgroundColorBlend(System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(229)))), ((int)(((byte)(247))))), 1F)});
-            this.tc_Main.ColorScheme.TabItemHotBackgroundColorBlend.AddRange(new DevComponents.DotNetBar.BackgroundColorBlend[] {
-            new DevComponents.DotNetBar.BackgroundColorBlend(System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(253)))), ((int)(((byte)(235))))), 0F),
-            new DevComponents.DotNetBar.BackgroundColorBlend(System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(236)))), ((int)(((byte)(168))))), 0.45F),
-            new DevComponents.DotNetBar.BackgroundColorBlend(System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(218)))), ((int)(((byte)(89))))), 0.45F),
-            new DevComponents.DotNetBar.BackgroundColorBlend(System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(230)))), ((int)(((byte)(141))))), 1F)});
-            this.tc_Main.ColorScheme.TabItemSelectedBackgroundColorBlend.AddRange(new DevComponents.DotNetBar.BackgroundColorBlend[] {
-            new DevComponents.DotNetBar.BackgroundColorBlend(System.Drawing.Color.White, 0F),
-            new DevComponents.DotNetBar.BackgroundColorBlend(System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(254))))), 0.45F),
-            new DevComponents.DotNetBar.BackgroundColorBlend(System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(254))))), 0.45F),
-            new DevComponents.DotNetBar.BackgroundColorBlend(System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(254))))), 1F)});
-            this.tc_Main.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tc_Main.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tc_Main.Location = new System.Drawing.Point(250, 50);
-            this.tc_Main.Name = "tc_Main";
-            this.tc_Main.SelectedTabFont = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.tc_Main.SelectedTabIndex = -1;
-            this.tc_Main.Size = new System.Drawing.Size(1405, 655);
-            this.tc_Main.Style = DevComponents.DotNetBar.eTabStripStyle.Office2007Document;
-            this.tc_Main.TabIndex = 7;
-            this.tc_Main.TabLayoutType = DevComponents.DotNetBar.eTabLayoutType.FixedWithNavigationBox;
-            this.tc_Main.Text = "tabControl1";
-            this.tc_Main.TabItemClose += new DevComponents.DotNetBar.TabStrip.UserActionEventHandler(this.tc_Main_TabItemClose);
-            // 
             // FrmDaskboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1655, 727);
+            this.ContextMenuStrip = this.contextMenuStrip1;
             this.Controls.Add(this.tc_Main);
             this.Controls.Add(this.pnl__Top_Menu);
             this.Controls.Add(this.pnl__Left_Menu);
             this.Controls.Add(this.statusStrip1);
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmDaskboard";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmDaskboard_FormClosing);
@@ -777,10 +859,11 @@ namespace Project03_Design
             this.pnl__DanhMuc.ResumeLayout(false);
             this.pnl__Menu_TacVu.ResumeLayout(false);
             this.pnl__Left_Headbar.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pcb__Menuheader)).EndInit();
             this.pnl__Top_Menu.ResumeLayout(false);
             this.pnl__Top_Menu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tc_Main)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pcb__Menuheader)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -832,6 +915,15 @@ namespace Project03_Design
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Timer timer1;
         private DevComponents.DotNetBar.TabControl tc_Main;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem saveAsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem printsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem getDataToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem minToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem maxToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.NotifyIcon notifyIcon1;
     }
 }
 
