@@ -30,7 +30,10 @@ namespace Project03_Design
         }
         private void FrmDaskboard_Load(object sender, EventArgs e)
         {
+            Frm_Login frm_Login = new Frm_Login();
+            frm_Login.ShowDialog();
             LoadMenu();
+
 
         }
 
@@ -312,6 +315,28 @@ namespace Project03_Design
                 frm.Show();
                 tc_Main.SelectedTabIndex = tc_Main.Tabs.Count - 1;
             }
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void maxToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+        }
+
+        private void minToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void button27_Click(object sender, EventArgs e)
+        {
+            FrmTabControl frmTabControl = new FrmTabControl();
+            frmTabControl.ShowDialog();
+
         }
     }
 }
