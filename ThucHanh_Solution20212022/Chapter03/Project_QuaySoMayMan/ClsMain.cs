@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LibraryClass.DatabaseType;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,5 +14,7 @@ namespace Project_QuaySoMayMan
         public static string pathNhanVienNhanGiai= Application.StartupPath + @"\NhanVienNhanGiai.ini";
         public static string pathNhanVienNhanGiaiExcel = Application.StartupPath + @"\NhanVienNhanGiai.xls";
         public static string pathNhanVien = Application.StartupPath + @"\NhanVien1.xls";
+
+        public static TypeDatabase typeDatabase = TypeDatabase.INI;
     }
 }
